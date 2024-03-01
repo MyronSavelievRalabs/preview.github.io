@@ -8,9 +8,9 @@
   <title>Головна</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240301030634">
 
-  <script defer="defer" src="js/main.min.js"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240301030634"></script>
 </head>
 
 <body>
@@ -19,13 +19,17 @@
   <div class="container">
     <div class="row">
       <div class="search-bar">
-    <button class="search-bar__button">
-    </button>
-    <input class="search-bar__input" type="search" name="search" id="search">
+    <button class="search-bar__btn-open"></button>
+    <div class="search-bar__input">
+        <input type="search" name="search" id="search">
+        <button class="search-bar__btn-close">
+            &#x2715;
+        </button>
+    </div>
 </div>
 
       <a href="/" class="logo header__logo">
-        <img src="/images/logo.svg" alt="">
+        <img src="./images/logo.svg" alt="">
       </a>
 
       <div class="header__buttons">
@@ -36,8 +40,8 @@
 </div>
 
 
-        <button class="button button--primary">
-          <img src="/images/icons/" alt="">
+        <button id="donation-btn" class="button button--primary">
+          <img src="./images/icons/donation.svg" alt="Donation">
           Підтримати
         </button>
       </div>
@@ -49,22 +53,27 @@
             <a href="/" class="menu__link">Головна</a>
         </li>
         <li class="menu__item">
-            <a href="/news.html" class="menu__link">Новини</a>
+            <a href="./news.html" class="menu__link">Новини</a>
         </li>
         <li class="menu__item">
-            <a href="/articles.html" class="menu__link">Статі</a>
+            <a href="./articles.html" class="menu__link">Статі</a>
         </li>
         <li class="menu__item">
-            <a href="/special-projects.html" class="menu__link">Спецпроєкти</a>
+            <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
         </li>
         <li class="menu__item">
-            <a href="/expert-articles.html" class="menu__link">Думки</a>
+            <a href="./expert-articles.html" class="menu__link">Думки</a>
         </li>
-        <li class="menu__item">
-            <a href="#" class="menu__link">Редакція</a>
-            <ul>
-
-            </ul>
+        <li class="menu__item menu-dropdown">
+            <a href="#" class="menu-dropdown__button menu-dropdown__button--icon-append">
+                Редакція
+                <i class="icon icon-arrow-down"></i>
+            </a>
+            <div class="menu-dropdown__content">
+                <a href="./about-us.html">Про Нас</a>
+                <a href="./editor-policy.html">Політика Редагування</a>
+                <a href="./usage-policy.html">Правила використання матеріалів</a>
+            </div>
         </li>
     </ul>
 </nav>
@@ -78,7 +87,7 @@
 <main>
     <div data-observ></div>
     <div class="container">
-        <div class="row">
+        <div class="row row--wrap">
             <div class="col-4 pl-0 pr-1">
                 <aside class="news-sidebar">
   <h2 class="news-sidebar__heading">
@@ -274,7 +283,7 @@
                 <section>
                     <div class="article-cards article-cards--grid article-cards--grid-col-2 article-cards--large">
                         <div class="article-card">
-                            <img class="article-card__image" src="/images/placeholders/article-card-large.png" alt="Article Card Image">
+                            <img class="article-card__image" src="./images/placeholders/article-card-large.png" alt="Article Card Image">
                             <div class="article-card__header">
                                 <span class="article-card__tag">Оновлено</span>
                                 <span class="article-card__category">Політика</span>
@@ -290,7 +299,7 @@
                             </div>
                         </div>
                         <div class="article-card">
-                            <img class="article-card__image" src="/images/placeholders/article-card-large.png" alt="Article Card Image">
+                            <img class="article-card__image" src="./images/placeholders/article-card-large.png" alt="Article Card Image">
                             <div class="article-card__header">
                                 <span class="article-card__tag">Оновлено</span>
                                 <span class="article-card__category">Політика</span>
@@ -311,7 +320,7 @@
                 <section>
                     <div class="article-cards article-cards--grid">
                         <div class="article-card">
-                            <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
+                            <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
                             <div class="article-card__header">
                                 <span class="article-card__tag">Оновлено</span>
                                 <span class="article-card__category">Політика</span>
@@ -327,7 +336,7 @@
                             </div>
                         </div>
                         <div class="article-card">
-                            <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
+                            <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
                             <div class="article-card__header">
                                 <span class="article-card__tag">Оновлено</span>
                                 <span class="article-card__category">Політика</span>
@@ -343,7 +352,7 @@
                             </div>
                         </div>
                         <div class="article-card">
-                            <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
+                            <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
                             <div class="article-card__header">
                                 <span class="article-card__tag">Оновлено</span>
                                 <span class="article-card__category">Політика</span>
@@ -359,7 +368,7 @@
                             </div>
                         </div>
                         <div class="article-card">
-                            <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
+                            <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
                             <div class="article-card__header">
                                 <span class="article-card__tag">Оновлено</span>
                                 <span class="article-card__category">Політика</span>
@@ -379,206 +388,217 @@
             </div>
         </div>
 
-        <section class="section banner">
-            <h2 class="banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
-                послуги.</h2>
-            <img class="banner__logo" src="/images/logo.svg" alt="Logo">
-            <button class="button button--primary banner__cta">
-                Підтримати
-            </button>
-        </section>
+        <div class="row">
+            <section class="section banner">
+    <h2 class="banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
+        послуги.</h2>
+    <img class="banner__logo" src="/images/logo.svg" alt="Logo">
+    <button class="button button--primary banner__cta">
+        Підтримати
+    </button>
+</section>
+        </div>
 
-        <section class="section articles">
-            <div class="articles__header">
-                <h2>
-                    <img src="/images/logo-green.svg" alt="Logo">
-                    Війна
-                </h2>
-                <button class="button button--secondary">
-                    До розділу
-                </button>
-            </div>
-            <div class="article-cards article-cards--grid article-cards--grid-col-4">
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+        <div class="row">
+            <section class="section">
+                <div class="section__header">
+                    <h2>
+                        <img src="./images/logo-green.svg" alt="Logo">
+                        Війна
+                    </h2>
+                    <button class="button button--secondary">
+                        До розділу
+                    </button>
+                </div>
+                <div class="article-cards article-cards--grid article-cards--grid-col-4">
+                    <div class="article-card">
+                        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
-                </div>
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+                    <div class="article-card">
+                        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
-                </div>
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+                    <div class="article-card">
+                        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
-                </div>
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+                    <div class="article-card">
+                        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section class="articles--with-banner">
 
-        </section>
+        <div class="row">
+            <section class="articles--with-banner">
 
-        <section class="section articles">
-            <div class="articles__header">
-                <h2>
-                    <img src="/images/logo-half-green.svg" alt="Logo">
-                    Політика
-                </h2>
-                <button class="button button--secondary">
-                    До розділу
-                </button>
-            </div>
-            <div class="article-cards article-cards--grid article-cards--grid-col-6">
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+            </section>
+        </div>
+
+
+        <div class="row">
+            <section class="section">
+                <div class="section__header">
+                    <h2>
+                        <img src="./images/logo-half-green.svg" alt="Logo">
+                        Політика
+                    </h2>
+                    <button class="button button--secondary">
+                        До розділу
+                    </button>
+                </div>
+                <div class="article-cards article-cards--grid article-cards--grid-col-6">
+                    <div class="article-card">
+                        <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
-                </div>
-                <div class="article-card article-card--promo">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+                    <div class="article-card article-card--promo">
+                        <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
-                </div>
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+                    <div class="article-card">
+                        <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
-                </div>
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+                    <div class="article-card">
+                        <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
-                </div>
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+                    <div class="article-card">
+                        <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
-                </div>
-                <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
-                    <div class="article-card__header">
-                        <span class="article-card__tag">Оновлено</span>
-                        <span class="article-card__category">Політика</span>
-                    </div>
-                    <a href="#" class="article-card__title">
-                        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                    </a>
-                    <div class="article-card__bottom">
+                    <div class="article-card">
+                        <img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image">
+                        <div class="article-card__header">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <a href="#" class="article-card__title">
+                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                        </a>
+                        <div class="article-card__bottom">
                         <span class="reading-time">
                           5 хвилин на читання
                         </span>
-                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
     </div>
 </main>
 
@@ -589,25 +609,25 @@
         <img src="/images/footer-logo.svg" alt="Footer Logo">
       </a>
     </div>
-    <div class="row mb-5">
-      <div class="col-4 footer__info">
+    <div class="row row--wrap mb-5">
+      <div class="col-4 footer__info px-0">
         <h6>
           <strong>Ми у соцмережах</strong>
         </h6>
         <ul class="mb-4 social-media-list">
           <li class="social-media-list__item">
             <a class="social-media-list__link" href="#">
-              <img src="/images/icons/facebook.svg" alt="Facebook">
+              <img src="./images/icons/facebook-white.svg" alt="Facebook">
             </a>
           </li>
           <li class="social-media-list__item">
             <a class="social-media-list__link" href="#">
-              <img src="/images/icons/twitter.svg" alt="Twitter">
+              <img src="./images/icons/twitter-white.svg" alt="Twitter">
             </a>
           </li>
           <li class="social-media-list__item">
             <a class="social-media-list__link" href="#">
-              <img src="/images/icons/telegram.svg" alt="Telegram">
+              <img src="./images/icons/telegram-white.svg" alt="Telegram">
             </a>
           </li>
         </ul>
@@ -616,11 +636,11 @@
         </h6>
         <img src="/images/media-dev-logo.svg" alt="Media Development Foundation">
       </div>
-      <div class="col-8 footer__navigation">
+      <nav class="col-8 footer__navigation px-0">
         <div class="col-6 text-center">
-          <h6 class="footer__navigation-heading">
+          <h5 class="footer__navigation-heading">
             Новини
-          </h6>
+          </h5>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="" class="menu__link">
@@ -644,10 +664,10 @@
             </li>
           </ul>
         </div>
-        <div class="col-6 text-center">
-          <h6 class="footer__navigation-heading">
+        <nav class="col-6 text-center">
+          <h5 class="footer__navigation-heading">
             Редакція
-          </h6>
+          </h5>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="" class="menu__link">
@@ -670,26 +690,28 @@
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </nav>
+      </nav>
     </div>
-    <div class="row">
+    <div class="row row--wrap">
       <div class="text-center col-12">
         <p>
           &copy; 2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
+          <br>
           <br>
           <a class="text-underline" href="#">
             Права та Інформація щоб в нас все було добре
           </a>
           <br>
+          <br>
           Усі права захищені.
         </p>
       </div>
     </div>
-    <hr class="my-4">
-    <div class="row">
+    <hr class="footer__divider">
+    <div class="row row--wrap">
       <div class="text-center col-12">
-        <h6>
+        <h6 class="mb-2 text-uppercase">
           <strong>Дизайн та розробка:</strong>
         </h6>
         <a href="#">

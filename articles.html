@@ -8,9 +8,9 @@
   <title>Статі</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240301030634">
 
-  <script defer="defer" src="js/main.min.js"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240301030634"></script>
 </head>
 
 <body>
@@ -19,13 +19,17 @@
   <div class="container">
     <div class="row">
       <div class="search-bar">
-    <button class="search-bar__button">
-    </button>
-    <input class="search-bar__input" type="search" name="search" id="search">
+    <button class="search-bar__btn-open"></button>
+    <div class="search-bar__input">
+        <input type="search" name="search" id="search">
+        <button class="search-bar__btn-close">
+            &#x2715;
+        </button>
+    </div>
 </div>
 
       <a href="/" class="logo header__logo">
-        <img src="/images/logo.svg" alt="">
+        <img src="./images/logo.svg" alt="">
       </a>
 
       <div class="header__buttons">
@@ -36,8 +40,8 @@
 </div>
 
 
-        <button class="button button--primary">
-          <img src="/images/icons/" alt="">
+        <button id="donation-btn" class="button button--primary">
+          <img src="./images/icons/donation.svg" alt="Donation">
           Підтримати
         </button>
       </div>
@@ -49,22 +53,27 @@
             <a href="/" class="menu__link">Головна</a>
         </li>
         <li class="menu__item">
-            <a href="/news.html" class="menu__link">Новини</a>
+            <a href="./news.html" class="menu__link">Новини</a>
         </li>
         <li class="menu__item">
-            <a href="/articles.html" class="menu__link">Статі</a>
+            <a href="./articles.html" class="menu__link">Статі</a>
         </li>
         <li class="menu__item">
-            <a href="/special-projects.html" class="menu__link">Спецпроєкти</a>
+            <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
         </li>
         <li class="menu__item">
-            <a href="/expert-articles.html" class="menu__link">Думки</a>
+            <a href="./expert-articles.html" class="menu__link">Думки</a>
         </li>
-        <li class="menu__item">
-            <a href="#" class="menu__link">Редакція</a>
-            <ul>
-
-            </ul>
+        <li class="menu__item menu-dropdown">
+            <a href="#" class="menu-dropdown__button menu-dropdown__button--icon-append">
+                Редакція
+                <i class="icon icon-arrow-down"></i>
+            </a>
+            <div class="menu-dropdown__content">
+                <a href="./about-us.html">Про Нас</a>
+                <a href="./editor-policy.html">Політика Редагування</a>
+                <a href="./usage-policy.html">Правила використання матеріалів</a>
+            </div>
         </li>
     </ul>
 </nav>
@@ -77,17 +86,20 @@
 
 <main>
     <div data-observ></div>
-    <div class="container">
-        <section class="articles">
-            <div class="articles__header">
+    <section class="container">
+        <div class="row">
+            <div class="page__header">
                 <h2>
                     <img src="/images/logo-half-green.svg" alt="Logo">
                     Статі
                 </h2>
             </div>
+        </div>
+
+        <div class="row">
             <div class="article-cards article-cards--grid article-cards--grid-col-3 article-cards--large">
                 <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card-large.png" alt="Article Card Image">
+                    <picture><source srcset="/images/placeholders/article-card-large.webp" type="image/webp"><img class="article-card__image" src="/images/placeholders/article-card-large.png" alt="Article Card Image"></picture>
                     <div class="article-card__header">
                         <span class="article-card__tag">Оновлено</span>
                         <span class="article-card__category">Політика</span>
@@ -96,14 +108,14 @@
                         Бойовий медик заявив про побиття співслужбовцем. Що відомо?
                     </a>
                     <div class="article-card__bottom">
-                        <span class="reading-time">
-                          5 хвилин на читання
-                        </span>
+                    <span class="reading-time">
+                      5 хвилин на читання
+                    </span>
                         <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                     </div>
                 </div>
                 <div class="article-card">
-                    <img class="article-card__image" src="/images/placeholders/article-card-large.png" alt="Article Card Image">
+                    <picture><source srcset="/images/placeholders/article-card-large.webp" type="image/webp"><img class="article-card__image" src="/images/placeholders/article-card-large.png" alt="Article Card Image"></picture>
                     <div class="article-card__header">
                         <span class="article-card__tag">Оновлено</span>
                         <span class="article-card__category">Політика</span>
@@ -112,14 +124,14 @@
                         Бойовий медик заявив про побиття співслужбовцем. Що відомо?
                     </a>
                     <div class="article-card__bottom">
-                        <span class="reading-time">
-                          5 хвилин на читання
-                        </span>
+                    <span class="reading-time">
+                      5 хвилин на читання
+                    </span>
                         <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                     </div>
                 </div>
                 <div class="article-card article-card--important">
-                    <img class="article-card__image" src="/images/placeholders/article-card-large.png" alt="Article Card Image">
+                    <picture><source srcset="/images/placeholders/article-card-large.webp" type="image/webp"><img class="article-card__image" src="/images/placeholders/article-card-large.png" alt="Article Card Image"></picture>
                     <div class="article-card__header">
                         <span class="article-card__tag">Оновлено</span>
                         <span class="article-card__category">Політика</span>
@@ -128,9 +140,9 @@
                         Бойовий медик заявив про побиття співслужбовцем. Що відомо?
                     </a>
                     <div class="article-card__bottom">
-                        <span class="reading-time">
-                          5 хвилин на читання
-                        </span>
+                    <span class="reading-time">
+                      5 хвилин на читання
+                    </span>
                         <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                     </div>
                 </div>
@@ -138,7 +150,7 @@
             <hr class="my-5">
             <div class="article-cards article-cards--grid article-cards--grid-col-4">
                 <div class="article-card article-card--important">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
+                    <picture><source srcset="/images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image"></picture>
                     <div class="article-card__header">
                         <span class="article-card__tag">Оновлено</span>
                         <span class="article-card__category">Політика</span>
@@ -147,14 +159,14 @@
                         Бойовий медик заявив про побиття співслужбовцем. Що відомо?
                     </a>
                     <div class="article-card__bottom">
-                        <span class="reading-time">
-                          5 хвилин на читання
-                        </span>
+                    <span class="reading-time">
+                      5 хвилин на читання
+                    </span>
                         <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                     </div>
                 </div>
                 <div class="article-card article-card--important">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
+                    <picture><source srcset="/images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image"></picture>
                     <div class="article-card__header">
                         <span class="article-card__tag">Оновлено</span>
                         <span class="article-card__category">Політика</span>
@@ -163,14 +175,14 @@
                         Бойовий медик заявив про побиття співслужбовцем. Що відомо?
                     </a>
                     <div class="article-card__bottom">
-                        <span class="reading-time">
-                          5 хвилин на читання
-                        </span>
+                    <span class="reading-time">
+                      5 хвилин на читання
+                    </span>
                         <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                     </div>
                 </div>
                 <div class="article-card article-card--important">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
+                    <picture><source srcset="/images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image"></picture>
                     <div class="article-card__header">
                         <span class="article-card__tag">Оновлено</span>
                         <span class="article-card__category">Політика</span>
@@ -179,14 +191,14 @@
                         Бойовий медик заявив про побиття співслужбовцем. Що відомо?
                     </a>
                     <div class="article-card__bottom">
-                        <span class="reading-time">
-                          5 хвилин на читання
-                        </span>
+                    <span class="reading-time">
+                      5 хвилин на читання
+                    </span>
                         <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                     </div>
                 </div>
                 <div class="article-card article-card--important">
-                    <img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image">
+                    <picture><source srcset="/images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="/images/placeholders/article-card.png" alt="Article Card Image"></picture>
                     <div class="article-card__header">
                         <span class="article-card__tag">Оновлено</span>
                         <span class="article-card__category">Політика</span>
@@ -195,9 +207,9 @@
                         Бойовий медик заявив про побиття співслужбовцем. Що відомо?
                     </a>
                     <div class="article-card__bottom">
-                        <span class="reading-time">
-                          5 хвилин на читання
-                        </span>
+                    <span class="reading-time">
+                      5 хвилин на читання
+                    </span>
                         <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                     </div>
                 </div>
@@ -210,12 +222,152 @@
                     Підтримати
                 </button>
             </section>
-        </section>
-        <nav class="pagination" aria-label="articles navigation">
+            <div class="col-8">
+                <div class="article-rows">
+                    <div class="article-row article-row--with-image">
+                        <div class="article-row__image">
+                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+                        </div>
+                        <div class="article-row__wrapper">
+                            <div class="article-row__header">
+                                <span class="article-row__tag">Оновлено</span>
+                                <span class="article-row__category">Політика</span>
+                            </div>
+                            <a href="#" class="article-row__title">
+                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                            </a>
+                            <div class="article-row__text">
+                                Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
+                            </div>
+                            <div class="article-row__bottom">
+                        <span class="reading-time">
+                            5 хвилин на читання
+                        </span>
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-row article-row--with-image">
+                        <div class="article-row__image">
+                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+                        </div>
+                        <div class="article-row__wrapper">
+                            <div class="article-row__header">
+                                <span class="article-row__tag">Оновлено</span>
+                                <span class="article-row__category">Політика</span>
+                            </div>
+                            <a href="#" class="article-row__title">
+                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                            </a>
+                            <div class="article-row__text">
+                                Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
+                            </div>
+                            <div class="article-row__bottom">
+                        <span class="reading-time">
+                            5 хвилин на читання
+                        </span>
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-row article-row--with-image">
+                        <div class="article-row__image">
+                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+                        </div>
+                        <div class="article-row__wrapper">
+                            <div class="article-row__header">
+                                <span class="article-row__tag">Оновлено</span>
+                                <span class="article-row__category">Політика</span>
+                            </div>
+                            <a href="#" class="article-row__title">
+                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                            </a>
+                            <div class="article-row__text">
+                                Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
+                            </div>
+                            <div class="article-row__bottom">
+                        <span class="reading-time">
+                            5 хвилин на читання
+                        </span>
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-row article-row--with-image">
+                        <div class="article-row__image">
+                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+                        </div>
+                        <div class="article-row__wrapper">
+                            <div class="article-row__header">
+                                <span class="article-row__tag">Оновлено</span>
+                                <span class="article-row__category">Політика</span>
+                            </div>
+                            <a href="#" class="article-row__title">
+                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                            </a>
+                            <div class="article-row__text">
+                                Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
+                            </div>
+                            <div class="article-row__bottom">
+                        <span class="reading-time">
+                            5 хвилин на читання
+                        </span>
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-row article-row--with-image">
+                        <div class="article-row__image">
+                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+                        </div>
+                        <div class="article-row__wrapper">
+                            <div class="article-row__header">
+                                <span class="article-row__tag">Оновлено</span>
+                                <span class="article-row__category">Політика</span>
+                            </div>
+                            <a href="#" class="article-row__title">
+                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                            </a>
+                            <div class="article-row__text">
+                                Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
+                            </div>
+                            <div class="article-row__bottom">
+                        <span class="reading-time">
+                            5 хвилин на читання
+                        </span>
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-row article-row--with-image">
+                        <div class="article-row__image">
+                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+                        </div>
+                        <div class="article-row__wrapper">
+                            <div class="article-row__header">
+                                <span class="article-row__tag">Оновлено</span>
+                                <span class="article-row__category">Політика</span>
+                            </div>
+                            <a href="#" class="article-row__title">
+                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                            </a>
+                            <div class="article-row__text">
+                                Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
+                            </div>
+                            <div class="article-row__bottom">
+                        <span class="reading-time">
+                            5 хвилин на читання
+                        </span>
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="pagination" aria-label="articles navigation">
     <ul class="pagination__list">
         <li class="pagination__item pagination__item--disabled">
-            <a class="pagination__link" href="?page=2" rel="prev">
-                &larr;
+            <a class="pagination__link pagination__link--prev" href="?page=2" rel="prev">
+                <i class="icon icon-arrow-left"></i>
             </a>
         </li>
 
@@ -236,13 +388,17 @@
         </li>
 
         <li class="pagination__item">
-            <a class="pagination__link" href="?page=4" rel="next">
-                &rarr;
+            <a class="pagination__link pagination__link--next" href="?page=4" rel="next">
+                <i class="icon icon-arrow-right"></i>
             </a>
         </li>
     </ul>
 </nav>
-    </div>
+            </div>
+        </div>
+
+
+    </section>
 </main>
 
 <footer class="footer">
@@ -252,25 +408,25 @@
         <img src="/images/footer-logo.svg" alt="Footer Logo">
       </a>
     </div>
-    <div class="row mb-5">
-      <div class="col-4 footer__info">
+    <div class="row row--wrap mb-5">
+      <div class="px-0 col-4 footer__info">
         <h6>
           <strong>Ми у соцмережах</strong>
         </h6>
         <ul class="mb-4 social-media-list">
           <li class="social-media-list__item">
             <a class="social-media-list__link" href="#">
-              <img src="/images/icons/facebook.svg" alt="Facebook">
+              <img src="./images/icons/facebook-white.svg" alt="Facebook">
             </a>
           </li>
           <li class="social-media-list__item">
             <a class="social-media-list__link" href="#">
-              <img src="/images/icons/twitter.svg" alt="Twitter">
+              <img src="./images/icons/twitter-white.svg" alt="Twitter">
             </a>
           </li>
           <li class="social-media-list__item">
             <a class="social-media-list__link" href="#">
-              <img src="/images/icons/telegram.svg" alt="Telegram">
+              <img src="./images/icons/telegram-white.svg" alt="Telegram">
             </a>
           </li>
         </ul>
@@ -279,11 +435,11 @@
         </h6>
         <img src="/images/media-dev-logo.svg" alt="Media Development Foundation">
       </div>
-      <div class="col-8 footer__navigation">
+      <nav class="col-8 footer__navigation px-0">
         <div class="text-center col-6">
-          <h6 class="footer__navigation-heading">
+          <h5 class="footer__navigation-heading">
             Новини
-          </h6>
+          </h5>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="" class="menu__link">
@@ -307,10 +463,10 @@
             </li>
           </ul>
         </div>
-        <div class="text-center col-6">
-          <h6 class="footer__navigation-heading">
+        <nav class="text-center col-6">
+          <h5 class="footer__navigation-heading">
             Редакція
-          </h6>
+          </h5>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="" class="menu__link">
@@ -333,26 +489,28 @@
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </nav>
+      </nav>
     </div>
-    <div class="row">
+    <div class="row row--wrap">
       <div class="text-center col-12">
         <p>
           &copy; 2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
+          <br>
           <br>
           <a class="text-underline" href="#">
             Права та Інформація щоб в нас все було добре
           </a>
           <br>
+          <br>
           Усі права захищені.
         </p>
       </div>
     </div>
-    <hr class="my-4">
-    <div class="row">
+    <hr class="footer__divider">
+    <div class="row row--wrap">
       <div class="text-center col-12">
-        <h6>
+        <h6 class="mb-2 text-uppercase">
           <strong>Дизайн та розробка:</strong>
         </h6>
         <a href="#">
