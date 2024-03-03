@@ -8,9 +8,9 @@
   <title>Новини</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240301031436">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240304014120">
 
-  <script defer="defer" src="js/main.min.js?_v=20240301031436"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240304014120"></script>
 </head>
 
 <body>
@@ -18,15 +18,18 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="search-bar">
-    <button class="search-bar__btn-open"></button>
+      <form class="search-bar" action="./search.html">
+    <button type="button" class="search-bar__btn-open">
+        <i class="icon icon-search">
+        </i>
+    </button>
     <div class="search-bar__input">
         <input type="search" name="search" id="search">
-        <button class="search-bar__btn-close">
+        <button type="button" class="search-bar__btn-close">
             &#x2715;
         </button>
     </div>
-</div>
+</form>
 
       <a href="/" class="logo header__logo">
         <img src="./images/logo.svg" alt="">
@@ -41,7 +44,7 @@
 
 
         <button id="donation-btn" class="button button--primary">
-          <img src="./images/icons/donation.svg" alt="Donation">
+          <i class="icon icon-donation"></i>
           Підтримати
         </button>
       </div>
@@ -87,31 +90,34 @@
 <main>
     <div data-observ></div>
     <div class="container page">
-        <div class="page__header">
-            <h2 class="page__heading">
-                <img src="./images/logo-half-green.svg" alt="Logo">
-                Новини
-            </h2>
-        </div>
         <div class="row">
-            <section class="col-8 news-tabs">
-                <div class="news-tabs__header">
-                    <div class="news-tabs__tabs">
-                        <button class="news-tabs__tab news-tabs__tab--active">Усі</button>
-                        <button class="news-tabs__tab">Головні</button>
+            <div class="page__header">
+                <h2 class="page__heading">
+                    <img src="./images/logo-half-green.svg" alt="Logo">
+                    Новини
+                </h2>
+            </div>
+        </div>
+
+        <div class="row row--wrap">
+            <section class="col-8 news-tabs pl-0">
+                <div class="navigation-tabs">
+                    <div class="navigation-tabs__tabs">
+                        <button class="navigation-tabs__tab navigation-tabs__tab--active">Усі</button>
+                        <button class="navigation-tabs__tab">Головні</button>
                     </div>
-                    <nav class="news-tabs__navigation" role="navigation">
-                        <ul class="news-tabs__navigation__list">
+                    <nav class="navigation-tabs__list" role="navigation">
+                        <ul>
                             <li>
-                                <button class="news-tabs__navigation__prev">
+                                <button class="navigation-tabs__item--prev">
                                     <i class="icon icon-arrow-left"></i>
                                 </button>
                             </li>
                             <li>
-                                <time class="news-tabs__navigation__current" datetime="2024-02-13">13.02.2024</time>
+                                <time class="navigation-tabs__item--current" datetime="2024-02-13">13.02.2024</time>
                             </li>
                             <li>
-                                <button class="news-tabs__navigation__next">
+                                <button class="navigation-tabs__item--next">
                                     <i class="icon icon-arrow-right"></i>
                                 </button>
                             </li>
@@ -125,7 +131,7 @@
                                 <span class="article-row__tag">Оновлено</span>
                                 <span class="article-row__category">Політика</span>
                             </div>
-                            <a href="#" class="article-row__title">
+                            <a href="./post-page.html" class="article-row__title">
                                 Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
                             </a>
                             <div class="article-row__bottom">
@@ -142,7 +148,7 @@
                                 <span class="article-row__tag">Оновлено</span>
                                 <span class="article-row__category">Політика</span>
                             </div>
-                            <a href="#" class="article-row__title">
+                            <a href="./post-page.html" class="article-row__title">
                                 Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
                             </a>
                             <div class="article-row__bottom">
@@ -159,7 +165,7 @@
                                 <span class="article-row__tag">Оновлено</span>
                                 <span class="article-row__category">Політика</span>
                             </div>
-                            <a href="#" class="article-row__title">
+                            <a href="./post-page.html" class="article-row__title">
                                 Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
                             </a>
                             <div class="article-row__bottom">
@@ -179,7 +185,7 @@
                                 <span class="article-row__tag">Оновлено</span>
                                 <span class="article-row__category">Політика</span>
                             </div>
-                            <a href="#" class="article-row__title">
+                            <a href="./post-page.html" class="article-row__title">
                                 Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
                             </a>
                             <div class="article-row__text">
@@ -199,7 +205,7 @@
                                 <span class="article-row__tag">Оновлено</span>
                                 <span class="article-row__category">Політика</span>
                             </div>
-                            <a href="#" class="article-row__title">
+                            <a href="./post-page.html" class="article-row__title">
                                 Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
                             </a>
                             <div class="article-row__bottom">
@@ -216,7 +222,7 @@
                                 <span class="article-row__tag">Оновлено</span>
                                 <span class="article-row__category">Політика</span>
                             </div>
-                            <a href="#" class="article-row__title">
+                            <a href="./post-page.html" class="article-row__title">
                                 Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
                             </a>
                             <div class="article-row__bottom">
@@ -233,7 +239,7 @@
                                 <span class="article-row__tag">Оновлено</span>
                                 <span class="article-row__category">Політика</span>
                             </div>
-                            <a href="#" class="article-row__title">
+                            <a href="./post-page.html" class="article-row__title">
                                 Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
                             </a>
                             <div class="article-row__bottom">
@@ -244,8 +250,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <nav class="pagination" aria-label="articles navigation">
+                </div>
+                <nav class="pagination" aria-label="articles navigation">
     <ul class="pagination__list">
         <li class="pagination__item pagination__item--disabled">
             <a class="pagination__link pagination__link--prev" href="?page=2" rel="prev">
@@ -276,9 +282,8 @@
         </li>
     </ul>
 </nav>
-                </div>
             </section>
-            <div class="col-4">
+            <div class="col-4 pr-0">
                 <div class="banner-small">
                     <h2 class="banner-small__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
                         послуги.</h2>
@@ -335,22 +340,22 @@
           </h5>
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./news.html" class="menu__link">
                 Новини
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./articles.html" class="menu__link">
                 Статі
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./special-projects.html" class="menu__link">
                 Спецпроекти
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./expert-articles.html" class="menu__link">
                 Думки
               </a>
             </li>
@@ -362,22 +367,22 @@
           </h5>
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./about-us.html" class="menu__link">
                 Про нас
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./editor-policy.html" class="menu__link">
                 Редакційна політика
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./usage-policy.html" class="menu__link">
                 Правила використання матеріалів
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./advertising.html" class="menu__link">
                 Реклама
               </a>
             </li>

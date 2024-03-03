@@ -8,9 +8,9 @@
   <title>Політика редагування</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240301031436">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240304014120">
 
-  <script defer="defer" src="js/main.min.js?_v=20240301031436"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240304014120"></script>
 </head>
 
 <body>
@@ -18,15 +18,18 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="search-bar">
-    <button class="search-bar__btn-open"></button>
+      <form class="search-bar" action="./search.html">
+    <button type="button" class="search-bar__btn-open">
+        <i class="icon icon-search">
+        </i>
+    </button>
     <div class="search-bar__input">
         <input type="search" name="search" id="search">
-        <button class="search-bar__btn-close">
+        <button type="button" class="search-bar__btn-close">
             &#x2715;
         </button>
     </div>
-</div>
+</form>
 
       <a href="/" class="logo header__logo">
         <img src="./images/logo.svg" alt="">
@@ -41,7 +44,7 @@
 
 
         <button id="donation-btn" class="button button--primary">
-          <img src="./images/icons/donation.svg" alt="Donation">
+          <i class="icon icon-donation"></i>
           Підтримати
         </button>
       </div>
@@ -87,8 +90,18 @@
 <main>
     <div data-observ></div>
     <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Редакція</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Правила використання матеріалів</li>
+                </ol>
+            </nav>
+        </div>
+
         <div class="row row--wrap">
-            <aside class="col-4 sidebar-navigation">
+            <div class="col-4 pl-0">
+                <aside class="sidebar-navigation">
     <nav>
         <ul class="sidebar-navigation__list">
             <li class="sidebar-navigation__item sidebar-navigation__item--active">
@@ -106,8 +119,9 @@
         </ul>
     </nav>
 </aside>
+            </div>
 
-            <article class="col-8">
+            <article class="col-8 pr-0">
                 <div class="page__header">
                     <img src="./images/logo-yellow.svg" alt="Logo">
                     <h1 class="page__heading">
@@ -176,22 +190,22 @@
           </h5>
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./news.html" class="menu__link">
                 Новини
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./articles.html" class="menu__link">
                 Статі
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./special-projects.html" class="menu__link">
                 Спецпроекти
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./expert-articles.html" class="menu__link">
                 Думки
               </a>
             </li>
@@ -203,22 +217,22 @@
           </h5>
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./about-us.html" class="menu__link">
                 Про нас
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./editor-policy.html" class="menu__link">
                 Редакційна політика
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./usage-policy.html" class="menu__link">
                 Правила використання матеріалів
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">
+              <a href="./advertising.html" class="menu__link">
                 Реклама
               </a>
             </li>
