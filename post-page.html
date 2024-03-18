@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <style>html { opacity: 0; }</style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Реклама</title>
+  <title>Стаття</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240305102820">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240318112353">
 
-  <script defer="defer" src="js/main.min.js?_v=20240305102820"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240318112353"></script>
 </head>
 
 <body>
@@ -18,13 +18,80 @@
 <header class="header">
   <div class="container">
     <div class="row">
+      <input type="checkbox" id="mobile-menu">
+      <label class="menu-hamburger" for="mobile-menu">
+        <span class="menu-hamburger__line"></span>
+      </label>
+
+      <div class="mobile-menu">
+        <form class="mobile-search-bar" action="./search.html">
+    <div class="mobile-search-bar__input">
+        <span class="icon icon-search">
+        </span>
+        <label for="search" hidden="hidden">Пошук</label>
+        <input type="search" name="search" id="search" placeholder="Пошук" required>
+    </div>
+</form>
+        <nav class="mobile-navigation">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active">
+              <a href="/" class="menu__link">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a href="./news.html" class="menu__link">Новини</a>
+            </li>
+            <li class="menu__item">
+              <a href="./articles.html" class="menu__link">Статі</a>
+            </li>
+            <li class="menu__item">
+              <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
+            </li>
+            <li class="menu__item">
+              <a href="./expert-articles.html" class="menu__link">Думки</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                Редакція
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./about-us.html" class="menu__link">Про Нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="./editor-policy.html" class="menu__link">Політика Редагування</a>
+            </li>
+            <li class="menu__item">
+              <a href="./usage-policy.html" class="menu__link">Правила використання матеріалів</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mb-4 social-media">
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Facebook">
+              <span class="icon icon-facebook"></span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Twitter">
+              <span class="icon icon-twitter"></span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Telegram">
+              <span class="icon icon-telegram"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <form class="search-bar" action="./search.html">
     <button type="button" class="search-bar__btn-open">
-        <i class="icon icon-search">
-        </i>
+        <span class="icon icon-search">
+        </span>
     </button>
     <div class="search-bar__input">
-        <input type="search" name="search" id="search">
+        <label for="search" hidden="hidden">Пошук</label>
+        <input type="search" name="search" id="search" required>
         <button type="button" class="search-bar__btn-close">
             &#x2715;
         </button>
@@ -36,12 +103,13 @@
       </a>
 
       <div class="header__buttons">
-        <button id="donation-btn" class="button button--primary">
-          <i class="icon icon-donation"></i>
+        <button id="donation-btn" class="button button--primary" title="Підтримати">
+          <span class="icon icon-donation"></span>
           Підтримати
         </button>
       </div>
     </div>
+
     <div class="row">
       <nav class="main-navigation">
     <ul class="menu__list">
@@ -63,7 +131,7 @@
         <li class="menu__item menu-dropdown">
             <a href="#" class="menu-dropdown__button menu-dropdown__button--icon-append">
                 Редакція
-                <i class="icon icon-arrow-down"></i>
+                <span class="icon icon-arrow-down"></span>
             </a>
             <ul class="menu-dropdown__content">
                 <li>
@@ -80,6 +148,7 @@
     </ul>
 </nav>
     </div>
+
     <div class="row">
       <hr class="divider-h">
     </div>
@@ -88,424 +157,762 @@
 
 <main>
     <div data-observ></div>
-    <div class="container post-page">
-        <div class="row">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Думки</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Канада на весні...</li>
-                </ol>
-            </nav>
-        </div>
-        <div class="row row--wrap">
-            <div class="col-8 pl-0 pr-2">
-                <div class="post-page__header">
-                    <div class="post-page__header-image">
-                        <img src="./images/logo-green.svg" alt="Logo">
-                    </div>
-                    <div class="post-page__header-wrapper">
-                        <h1 class="post-page__heading">
-                            Канада навесні передасть Україні понад 800 дронів
-                        </h1>
-                        <div class="post-page__subheading">
-                            Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
-                        </div>
-                        <div class="post-author-card">
-                            <div class="post-author-card__image">
-                                <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
-                            </div>
-                            <div class="post-author-card__wrapper">
-                                <a class="post-author-card__name" href="./author.html">
-                                    Аполлінарія Гарматозарядний
-                                </a>
-                                <time class="post-author-card__time" datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            </div>
-                        </div>
-                        <div class="social-share">
-                            Поділитись новиною:
-                            <ul class="social-share__list">
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-telegram"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-copy"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-page__content">
-                    <figure>
-                        <picture><source srcset="./images/placeholders/content-image-placeholder.webp" type="image/webp"><img src="./images/placeholders/content-image-placeholder.png" alt="Content Image Placeholder"></picture>
-                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
-                    </figure>
-                    <p>
-                        Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
-                    </p>
-                    <p class="my-4">
-                        <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
-                    </p>
-                    <h2>
-                        Канада навесні передасть Україні понад 800 дронів
-                    </h2>
-                    <blockquote>
-                        <p>Канада інвестує більше 95 млн дол, аби надати Україні понад 800 дронів SkyRanger R70.</p>
-                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
-                    </blockquote>
-                    <p>
-                        <br>
-                        <strong>Джерело:</strong> міністр оборони Канади Біл Блер у Торонто, цитує Укрінформ.
-                        <br>
-                        <br>
-                        <strong>Пряма мова:</strong> "Канада інвестує більше 95 млн дол, аби надати Україні понад 800 дронів SkyRanger R70".
-                        <br>
-                        <br>
-                        <strong>Деталі:</strong> За словами Блера, ці дрони канадського виробництва – одні з найкращих у світі в своєму класі.
-                        <br>
-                        <br>
-                        "Вони можуть транспортувати різні вантажі вагою до 3,5 кг, в тому числі боєприпаси. Ці дрони допоможуть українцям на передовій швидко, точно й ефективно визначати цілі", – пояснив міністр.
-                        <br>
-                        <br>
-                        Він додав, що SkyRanger здатний визначати окремі транспортні засоби й джерела тепла з великої відстані та за поганих погодних умов.
-                    </p>
-                    <div class="post-tags">
-                        <strong>Тема:</strong>
-                        <ul class="post-tags__list">
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Україна
-                                </a>
-                            </li>
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Війна
-                                </a>
-                            </li>
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Зброя
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="post-page__header">
-                    <div class="post-page__header-image">
-                        <img src="./images/logo-green.svg" alt="Logo">
-                    </div>
-                    <div class="post-page__header-wrapper">
-                        <h1 class="post-page__heading">
-                            Канада навесні передасть Україні понад 800 дронів
-                        </h1>
-                        <div class="post-page__subheading">
-                            Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
-                        </div>
-                        <div class="post-author-card">
-                            <div class="post-author-card__image">
-                                <picture><source srcset="./images/placeholders/expert-article-card-small.webp" type="image/webp"><img src="./images/placeholders/expert-article-card-small.png" alt="Expert Author"></picture>
-                            </div>
-                            <div class="post-author-card__wrapper">
-                                <a class="post-author-card__name" href="./author.html">
-                                    Аполлінарія Гарматозарядний
-                                </a>
-                                <time class="post-author-card__time" datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            </div>
-                        </div>
-                        <div class="social-share">
-                            Поділитись новиною:
-                            <ul class="social-share__list">
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-telegram"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-copy"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-page__content">
-                    <figure>
-                        <picture><source srcset="./images/placeholders/content-image-placeholder-2.webp" type="image/webp"><img src="./images/placeholders/content-image-placeholder-2.png" alt="Content Image Placeholder"></picture>
-                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
-                    </figure>
-                    <p>
-                        Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
-                    </p>
-                    <p class="my-4">
-                        <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
-                    </p>
-                    <h2>
-                        Канада навесні передасть Україні понад 800 дронів
-                    </h2>
-                    <blockquote>
-                        <p>Канада інвестує більше 95 млн дол, аби надати Україні понад 800 дронів SkyRanger R70.</p>
-                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
-                    </blockquote>
-                    <p>
-                        <br>
-                        <strong>Джерело:</strong> міністр оборони Канади Біл Блер у Торонто, цитує Укрінформ.
-                        <br>
-                        <br>
-                        <strong>Пряма мова:</strong> "Канада інвестує більше 95 млн дол, аби надати Україні понад 800 дронів SkyRanger R70".
-                        <br>
-                        <br>
-                        <strong>Деталі:</strong> За словами Блера, ці дрони канадського виробництва – одні з найкращих у світі в своєму класі.
-                        <br>
-                        <br>
-                        "Вони можуть транспортувати різні вантажі вагою до 3,5 кг, в тому числі боєприпаси. Ці дрони допоможуть українцям на передовій швидко, точно й ефективно визначати цілі", – пояснив міністр.
-                        <br>
-                        <br>
-                        Він додав, що SkyRanger здатний визначати окремі транспортні засоби й джерела тепла з великої відстані та за поганих погодних умов.
-                    </p>
-                    <div class="post-tags">
-                        <strong>Тема:</strong>
-                        <ul class="post-tags__list">
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Україна
-                                </a>
-                            </li>
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Війна
-                                </a>
-                            </li>
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Зброя
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="post-page__header">
-                    <div class="post-page__header-image">
-                        <img src="./images/logo-green.svg" alt="Logo">
-                    </div>
-                    <div class="post-page__header-wrapper">
-                        <h1 class="post-page__heading">
-                            Канада навесні передасть Україні понад 800 дронів
-                        </h1>
-                        <div class="post-page__subheading">
-                            Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
-                        </div>
-                        <div class="post-author-card">
-                            <div class="post-author-card__image">
-                                <picture><source srcset="./images/placeholders/expert-article-card-small-2.webp" type="image/webp"><img src="./images/placeholders/expert-article-card-small-2.png" alt="Expert Author"></picture>
-                            </div>
-                            <div class="post-author-card__wrapper">
-                                <a class="post-author-card__name" href="./author.html">
-                                    Аполлінарія Гарматозарядний
-                                </a>
-                                <time class="post-author-card__time" datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            </div>
-                        </div>
-                        <div class="social-share">
-                            Поділитись новиною:
-                            <ul class="social-share__list">
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-telegram"></i>
-                                    </a>
-                                </li>
-                                <li class="social-share__item">
-                                    <a href="#" class="social-share__link">
-                                        <i class="icon icon-copy"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-page__content">
-                    <figure>
-                        <picture><source srcset="./images/placeholders/content-image-placeholder-3.webp" type="image/webp"><img src="./images/placeholders/content-image-placeholder-3.png" alt="Content Image Placeholder"></picture>
-                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
-                    </figure>
-                    <p>
-                        Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
-                    </p>
-                    <p class="my-4">
-                        <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
-                    </p>
-                    <h2>
-                        Канада навесні передасть Україні понад 800 дронів
-                    </h2>
-                    <blockquote>
-                        <p>Канада інвестує більше 95 млн дол, аби надати Україні понад 800 дронів SkyRanger R70.</p>
-                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
-                    </blockquote>
-                    <p>
-                        <br>
-                        <strong>Джерело:</strong> міністр оборони Канади Біл Блер у Торонто, цитує Укрінформ.
-                        <br>
-                        <br>
-                        <strong>Пряма мова:</strong> "Канада інвестує більше 95 млн дол, аби надати Україні понад 800 дронів SkyRanger R70".
-                        <br>
-                        <br>
-                        <strong>Деталі:</strong> За словами Блера, ці дрони канадського виробництва – одні з найкращих у світі в своєму класі.
-                        <br>
-                        <br>
-                        "Вони можуть транспортувати різні вантажі вагою до 3,5 кг, в тому числі боєприпаси. Ці дрони допоможуть українцям на передовій швидко, точно й ефективно визначати цілі", – пояснив міністр.
-                        <br>
-                        <br>
-                        Він додав, що SkyRanger здатний визначати окремі транспортні засоби й джерела тепла з великої відстані та за поганих погодних умов.
-                    </p>
-                    <div class="post-tags">
-                        <strong>Тема:</strong>
-                        <ul class="post-tags__list">
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Україна
-                                </a>
-                            </li>
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Війна
-                                </a>
-                            </li>
-                            <li class="post-tags__item">
-                                <a class="post-tags__link" href="#">
-                                    Зброя
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <hr>
+    <section class="post-page">
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Думки
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Канада на весні...
+                        </li>
+                    </ol>
+                </nav>
             </div>
-            <div class="col-4 pl-2 pr-0">
-                <div class="banner-small">
-                    <h2 class="banner-small__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
-                        послуги.</h2>
-                    <img class="banner-small__logo" src="./images/logo.svg" alt="Logo">
-                    <button class="button button--primary banner-small__cta">
-                        Підтримати
-                    </button>
-                </div>
-                <div class="recent-news">
-                    <div class="recent-news__header">
-                        <img src="./images/logo-yellow.svg" alt="Logo">
-                        <h4 class="recent-news__heading">
-                            Останні новини
-                        </h4>
-                    </div>
-                    <div class="article-cards article-cards--grid article-cards--grid-col-2">
-                        <div class="article-card">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                            <div class="article-card__header">
-                                <span class="article-card__tag">Оновлено</span>
-                                <span class="article-card__category">Політика</span>
+            <div class="row row--wrap">
+                <div class="col-8 pl-0 pr-2">
+                    <div class="post-page__header">
+                        <h1 class="post-page__heading">
+                            Канада навесні передасть Україні понад 800 дронів
+                        </h1>
+                        <div class="post-page__authors">
+                            <div class="post-author-card">
+                                <div class="post-author-card__image">
+                                    <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                                </div>
+                                <div class="post-author-card__wrapper">
+                                    <a class="post-author-card__name" href="./author.html">
+                                        Аполлінарія Гарматозарядний
+                                    </a>
+                                </div>
                             </div>
-                            <a href="./post-page.html" class="article-card__title">
-                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                            </a>
-                            <div class="article-card__bottom">
-                                <span class="reading-time">
-                                  5 хвилин на читання
-                                </span>
-                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <div class="post-author-card">
+                                <div class="post-author-card__image">
+                                    <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                                </div>
+                                <div class="post-author-card__wrapper">
+                                    <a class="post-author-card__name" href="./author.html">
+                                        Любомир Коновал
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="article-card">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                            <div class="article-card__header">
-                                <span class="article-card__tag">Оновлено</span>
-                                <span class="article-card__category">Політика</span>
-                            </div>
-                            <a href="./post-page.html" class="article-card__title">
-                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                            </a>
-                            <div class="article-card__bottom">
-                                <span class="reading-time">
-                                  5 хвилин на читання
-                                </span>
-                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <div class="post-author-card">
+                                <div class="post-author-card__image">
+                                    <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                                </div>
+                                <div class="post-author-card__wrapper">
+                                    <a class="post-author-card__name" href="./author.html">
+                                        Софія Коновал
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="article-card">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                            <div class="article-card__header">
-                                <span class="article-card__tag">Оновлено</span>
-                                <span class="article-card__category">Політика</span>
-                            </div>
-                            <a href="./post-page.html" class="article-card__title">
-                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                            </a>
-                            <div class="article-card__bottom">
-                                <span class="reading-time">
-                                  5 хвилин на читання
-                                </span>
-                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            </div>
-                        </div>
-                        <div class="article-card">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img class="article-card__image" src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                            <div class="article-card__header">
-                                <span class="article-card__tag">Оновлено</span>
-                                <span class="article-card__category">Політика</span>
-                            </div>
-                            <a href="./post-page.html" class="article-card__title">
-                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                            </a>
-                            <div class="article-card__bottom">
-                                <span class="reading-time">
-                                  5 хвилин на читання
-                                </span>
-                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        <div class="post-page__header__info">
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <span class="reading-time">
+                                5 хвилин на читання
+                            </span>
+                            <div class="social-share">
+                                <ul class="social-share__list">
+                                    <li class="social-share__item">
+                                        <a href="#" class="social-share__link" title="Facebook">
+                                            <span class="icon icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="social-share__item">
+                                        <a href="#" class="social-share__link" title="Twitter">
+                                            <span class="icon icon-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li class="social-share__item">
+                                        <a href="#" class="social-share__link" title="Telegram">
+                                            <span class="icon icon-telegram"></span>
+                                        </a>
+                                    </li>
+                                    <li class="social-share__item">
+                                        <a href="#" class="social-share__link" title="Copy Link">
+                                            <span class="icon icon-copy"></span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="post-page__content">
+                        <figure>
+                            <picture>
+                                <img src="./images/placeholders/content-image-placeholder.png" alt="Content Image Placeholder">
+                            </picture>
+                            <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                        </figure>
+                        <p>
+                            Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
+                        </p>
+                        <p class="my-4">
+                            <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
+                        </p>
+                        <h2>
+                            Дрони: Нова Сила Української Оборони
+                        </h2>
+                        <blockquote>
+                            <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі України за свою безпеку</p>
+                            <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                        </blockquote>
+                        <p>
+                            <strong>Деталі:</strong> Україна здійснила стратегічний крок у підвищенні своєї обороноздатності, укладаючи угоду з Канадою на постачання бойових дронів. Ця угода, яка охоплює постачання військових дронів від провідного канадського виробника, є важливим кроком для України в зміцненні своєї оборонної потужності в умовах загострення геополітичної ситуації у регіоні, цитує
+                            <a class="tooltip" href="">
+                                Demonstration
+                                <span>
+                                    <picture><source srcset="https://www.scriptol.com/images/apache.webp" type="image/webp"><img src="https://www.scriptol.com/images/apache.png"></picture>
+                                    <h3>How use my site</h3>The description with an image.
+                                </span>
+                            </a>.
+                        </p>
+                        <p>
+                            Важливість цієї угоди підкреслюється не лише технологічними аспектами, але й політичними та стратегічними перспективами, які вона відкриває для України. Давайте розглянемо деталі цієї угоди та її потенційні наслідки.
+                        </p>
+                        <p>
+                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                        </p>
+
+                        <div class="image-slider-with-thumbnails">
+    <div class="splide primary-slider" role="group" aria-label="Main Image Slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-1.jpeg" alt="Image Slide 1">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-2.jpeg" alt="Image Slide 2">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-3.jpeg" alt="Image Slide 3">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-4.jpeg" alt="Image Slide 4">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="splide secondary-slider" role="group" aria-label="Secondary Image Slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-1.jpeg" alt="Image Slide 1">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-2.jpeg" alt="Image Slide 2">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-3.jpeg" alt="Image Slide 3">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-4.jpeg" alt="Image Slide 4">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                        <blockquote>
+                            <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі України за свою безпеку</p>
+                            <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                        </blockquote>
+
+                        <p>
+                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                        </p>
+
+                        <ol>
+                            <li>
+                                Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати розвідку, наносити удари по ворожих цілях та координувати військові операції з високою точністю та ефективністю  (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                            </li>
+                            <li>
+                                Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                            </li>
+                        </ol>
+
+                        <p>
+                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                        </p>
+
+                        <ul>
+                            <li>
+                                Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати розвідку, наносити удари по ворожих цілях та координувати військові операції з високою точністю та ефективністю  (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                            </li>
+                            <li>
+                                Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                            </li>
+                        </ul>
+
+                        <div class="post-tags">
+                            <strong>Тема:</strong>
+                            <ul class="post-tags__list">
+                                <li class="post-tags__item">
+                                    <a class="post-tags__link" href="#">
+                                        Україна
+                                    </a>
+                                </li>
+                                <li class="post-tags__item">
+                                    <a class="post-tags__link" href="#">
+                                        Війна
+                                    </a>
+                                </li>
+                                <li class="post-tags__item">
+                                    <a class="post-tags__link" href="#">
+                                        Зброя
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+                    </div>
+
+                    <section class="post-banner section">
+    <h2 class="post-banner__heading">Підписуйтесь на нас у соціальних мережах.</h2>
+    <img class="post-banner__logo" src="./images/logo.svg" alt="Logo">
+    <div class="post-banner__buttons">
+        <a class="button button--primary" href="#">
+            <i class="icon icon-telegram"></i>
+        </a>
+        <a class="button button--primary" href="#">
+            <i class="icon icon-instagram"></i>
+        </a>
+        <a class="button button--primary" href="#">
+            <i class="icon icon-facebook"></i>
+        </a>
+        <a class="button button--primary" href="#">
+            <i class="icon icon-twitter"></i>
+        </a>
+    </div>
+</section>
+
+                    <div class="post-page__header">
+                        <h1 class="post-page__heading">
+                            Канада навесні передасть Україні понад 800 дронів
+                        </h1>
+                        <div class="post-page__authors">
+                            <div class="post-author-card">
+                                <div class="post-author-card__image">
+                                    <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                                </div>
+                                <div class="post-author-card__wrapper">
+                                    <a class="post-author-card__name" href="./author.html">
+                                        Аполлінарія Гарматозарядний
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post-author-card">
+                                <div class="post-author-card__image">
+                                    <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                                </div>
+                                <div class="post-author-card__wrapper">
+                                    <a class="post-author-card__name" href="./author.html">
+                                        Аполлінарія Гарматозарядний
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-page__header__info">
+                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                            <div class="social-share">
+                                <ul class="social-share__list">
+                                    <li class="social-share__item">
+                                        <a href="#" class="social-share__link" title="Facebook">
+                                            <span class="icon icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="social-share__item">
+                                        <a href="#" class="social-share__link" title="Twitter">
+                                            <span class="icon icon-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li class="social-share__item">
+                                        <a href="#" class="social-share__link" title="Telegram">
+                                            <span class="icon icon-telegram"></span>
+                                        </a>
+                                    </li>
+                                    <li class="social-share__item">
+                                        <a href="#" class="social-share__link" title="Copy Link">
+                                            <span class="icon icon-copy"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-page__content">
+                        <figure>
+                            <picture>
+                                <img src="./images/placeholders/content-image-placeholder.png" alt="Content Image Placeholder">
+                            </picture>
+                            <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                        </figure>
+                        <p>
+                            Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
+                        </p>
+                        <p class="my-4">
+                            <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
+                        </p>
+                        <h2>
+                            Дрони: Нова Сила Української Оборони
+                        </h2>
+                        <blockquote>
+                            <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі України за свою безпеку</p>
+                            <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                        </blockquote>
+                        <p>
+                            <strong>Деталі:</strong> Україна здійснила стратегічний крок у підвищенні своєї обороноздатності, укладаючи угоду з Канадою на постачання бойових дронів. Ця угода, яка охоплює постачання військових дронів від провідного канадського виробника, є важливим кроком для України в зміцненні своєї оборонної потужності в умовах загострення геополітичної ситуації у регіоні, цитує
+                            <a class="tooltip" href="">
+                                Demonstration
+                                <span>
+                                    <picture><source srcset="https://www.scriptol.com/images/apache.webp" type="image/webp"><img src="https://www.scriptol.com/images/apache.png"></picture>
+                                    <h3>How use my site</h3>The description with an image.
+                                </span>
+                            </a>.
+                        </p>
+                        <p>
+                            Важливість цієї угоди підкреслюється не лише технологічними аспектами, але й політичними та стратегічними перспективами, які вона відкриває для України. Давайте розглянемо деталі цієї угоди та її потенційні наслідки.
+                        </p>
+                        <p>
+                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                        </p>
+
+                        <div class="image-slider-with-thumbnails">
+    <div class="splide primary-slider" role="group" aria-label="Main Image Slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-1.jpeg" alt="Image Slide 1">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-2.jpeg" alt="Image Slide 2">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-3.jpeg" alt="Image Slide 3">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-4.jpeg" alt="Image Slide 4">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="splide secondary-slider" role="group" aria-label="Secondary Image Slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-1.jpeg" alt="Image Slide 1">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-2.jpeg" alt="Image Slide 2">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-3.jpeg" alt="Image Slide 3">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-4.jpeg" alt="Image Slide 4">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                        <blockquote>
+                            <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі України за свою безпеку</p>
+                            <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                        </blockquote>
+
+                        <p>
+                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                        </p>
+                        <figure>
+                            <picture>
+                                <img src="./images/slides/image-slide-1.jpeg" alt="Content Image Placeholder">
+                            </picture>
+                            <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <img src="./images/slides/image-slide-2.jpeg" alt="Content Image Placeholder">
+                            </picture>
+                            <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                        </figure>
+                        <ol>
+                            <li>
+                                Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати розвідку, наносити удари по ворожих цілях та координувати військові операції з високою точністю та ефективністю  (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                            </li>
+                            <li>
+                                Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                            </li>
+                        </ol>
+
+                        <p>
+                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                        </p>
+
+                        <ul>
+                            <li>
+                                Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати розвідку, наносити удари по ворожих цілях та координувати військові операції з високою точністю та ефективністю  (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                            </li>
+                            <li>
+                                Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                            </li>
+                        </ul>
+
+                        <div class="post-tags">
+                            <strong>Тема:</strong>
+                            <ul class="post-tags__list">
+                                <li class="post-tags__item">
+                                    <a class="post-tags__link" href="#">
+                                        Україна
+                                    </a>
+                                </li>
+                                <li class="post-tags__item">
+                                    <a class="post-tags__link" href="#">
+                                        Війна
+                                    </a>
+                                </li>
+                                <li class="post-tags__item">
+                                    <a class="post-tags__link" href="#">
+                                        Зброя
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-4 pl-2 pr-0">
+                    <div class="side-banner">
+    <h2 class="side-banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
+        послуги.</h2>
+    <img class="side-banner__logo" src="./images/logo.svg" alt="Logo">
+    <button class="button button--primary side-banner__cta">
+        Підтримати
+    </button>
+</div>
+                    <div class="recent-news">
+    <h2 class="recent-news__heading">
+        <img src="./images/logo-yellow.svg" alt="Логотип">
+        Останні новини
+    </h2>
+
+    <div class="article-time-rows">
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
+            </div>
+        </div>
+
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
+            </div>
+        </div>
+
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
+            </div>
+        </div>
+
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
+            </div>
+        </div>
+
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
+            </div>
+        </div>
+
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
+            </div>
+        </div>
+
+        <div class="recent-news__divider">
+            <time datetime="2024-02-20">20.02.2024</time>
+        </div>
+
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
+            </div>
+        </div>
+
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
+            </div>
+        </div>
+
+        <div class="article-time-row">
+            <div class="article-time-row__header">
+                <time datetime="14:30">14:30</time>
+            </div>
+            <div class="article-time-row__wrapper">
+                <a href="./post-page.html" class="article-time-row__title" title="Title">
+                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                </a>
             </div>
         </div>
     </div>
+
+    <button class="button button--secondary recent-news__cta">
+        Більше новин
+    </button>
+</div>
+                    <div class="recent-news">
+    <h2 class="recent-news__heading">
+        <img src="./images/logo-yellow.svg" alt="Логотип">
+        Останні новини
+    </h2>
+
+    <div class="article-cards article-cards--grid article-cards--grid-col-2">
+        
+            <div class="article-small-card">
+    <div class="article-small-card__image">
+        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+    </div>
+    <div class="article-small-card__header">
+        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+    </div>
+    <a href="./post-page.html" class="article-small-card__title" title="Title">
+        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+    </a>
+</div>
+        
+            <div class="article-small-card">
+    <div class="article-small-card__image">
+        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+    </div>
+    <div class="article-small-card__header">
+        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+    </div>
+    <a href="./post-page.html" class="article-small-card__title" title="Title">
+        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+    </a>
+</div>
+        
+            <div class="article-small-card">
+    <div class="article-small-card__image">
+        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+    </div>
+    <div class="article-small-card__header">
+        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+    </div>
+    <a href="./post-page.html" class="article-small-card__title" title="Title">
+        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+    </a>
+</div>
+        
+            <div class="article-small-card">
+    <div class="article-small-card__image">
+        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+    </div>
+    <div class="article-small-card__header">
+        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+    </div>
+    <a href="./post-page.html" class="article-small-card__title" title="Title">
+        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+    </a>
+</div>
+        
+            <div class="article-small-card">
+    <div class="article-small-card__image">
+        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+    </div>
+    <div class="article-small-card__header">
+        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+    </div>
+    <a href="./post-page.html" class="article-small-card__title" title="Title">
+        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+    </a>
+</div>
+        
+            <div class="article-small-card">
+    <div class="article-small-card__image">
+        <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+    </div>
+    <div class="article-small-card__header">
+        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+    </div>
+    <a href="./post-page.html" class="article-small-card__title" title="Title">
+        Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+    </a>
+</div>
+        
+    </div>
+
+    <div class="article-cards">
+        <div class="article-small-card">
+            <div class="article-small-card__image">
+                <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+            </div>
+            <div class="article-small-card__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+            </div>
+            <a href="./post-page.html" class="article-small-card__title" title="Title">
+                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+            </a>
+        </div>
+        <div class="article-small-card">
+            <div class="article-small-card__image">
+                <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+            </div>
+            <div class="article-small-card__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+            </div>
+            <a href="./post-page.html" class="article-small-card__title" title="Title">
+                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+            </a>
+        </div>
+        <div class="article-small-card">
+            <div class="article-small-card__image">
+                <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+            </div>
+            <div class="article-small-card__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+            </div>
+            <a href="./post-page.html" class="article-small-card__title" title="Title">
+                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+            </a>
+        </div>
+        <div class="article-small-card">
+            <div class="article-small-card__image">
+                <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+            </div>
+            <div class="article-small-card__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+            </div>
+            <a href="./post-page.html" class="article-small-card__title" title="Title">
+                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+            </a>
+        </div>
+    </div>
+
+    <div class="article-rows">
+        <div class="article-row article-row--with-image">
+            <div class="article-row__image">
+                <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+            </div>
+            <div class="article-row__wrapper">
+                <div class="article-row__header">
+                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                    <span class="reading-time">
+                        5 хвилин на читання
+                    </span>
+                </div>
+                <a href="./post-page.html" class="article-row__title" title="Title">
+                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button class="button button--secondary recent-news__cta">
+        Більше новин
+    </button>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
@@ -516,39 +923,30 @@
       </a>
     </div>
     <div class="row row--wrap mb-5">
-      <div class="col-4 footer__info px-0">
+      <div class="px-0 col-3 footer__info">
         <h6>
           <strong>Ми у соцмережах</strong>
         </h6>
         <ul class="mb-4 social-media-list">
           <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">
-              <i class="icon icon-facebook"></i>
+            <a class="social-media-list__link" href="#" title="Facebook">
+              <span class="icon icon-facebook"></span>
             </a>
           </li>
           <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">
-              <i class="icon icon-twitter"></i>
+            <a class="social-media-list__link" href="#" title="Twitter">
+              <span class="icon icon-twitter"></span>
             </a>
           </li>
           <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">
-              <i class="icon icon-telegram"></i>
+            <a class="social-media-list__link" href="#" title="Telegram">
+              <span class="icon icon-telegram"></span>
             </a>
           </li>
         </ul>
-        <h6>
-          <strong>Розвиваємо проект за підтримки:</strong>
-        </h6>
-        <a href="https://mediadevelopmentfoundation.org/">
-          <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
-        </a>
       </div>
-      <nav class="col-8 footer__navigation px-0">
+      <nav class="col-6 footer__navigation px-0">
         <div class="col-6 text-left">
-          <h5 class="footer__navigation-heading">
-            Новини
-          </h5>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="./news.html" class="menu__link">
@@ -573,9 +971,6 @@
           </ul>
         </div>
         <nav class="col-6 text-left">
-          <h5 class="footer__navigation-heading">
-            Редакція
-          </h5>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="./about-us.html" class="menu__link">
@@ -600,25 +995,13 @@
           </ul>
         </nav>
       </nav>
-    </div>
-    <div class="row row--wrap">
-      <div class="col-12 text-center">
-        <p>
-          &copy; 2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
-          <br>
-          <br>
-          <a class="text-underline" href="#">
-            Права та Інформація щоб в нас все було добре
-          </a>
-          <br>
-          <br>
-          Усі права захищені.
-        </p>
-      </div>
-    </div>
-    <hr class="footer__divider">
-    <div class="row row--wrap">
-      <div class="col-12 text-center">
+      <div class="px-0 col-3 footer__info">
+        <h6>
+          <strong>Розвиваємо проект за підтримки:</strong>
+        </h6>
+        <a href="https://mediadevelopmentfoundation.org/">
+          <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
+        </a>
         <h6 class="mb-2 text-uppercase">
           <strong>Дизайн та розробка:</strong>
         </h6>
@@ -626,7 +1009,21 @@
           <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
         </a>
       </div>
-
+    </div>
+    <div class="row row--wrap justify-content-center">
+      <div class="text-center w-75">
+        <p>
+          &copy; ©2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
+          <br>
+          <br>
+          <a class="text-underline" href="#">
+            Права та Інформація, щоб в нас все було добре
+          </a>
+          <br>
+          <br>
+          Усі права захищені.
+        </p>
+      </div>
     </div>
   </div>
 </footer>

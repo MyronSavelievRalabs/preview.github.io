@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <style>html { opacity: 0; }</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Стаття</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240318112353">
+
+  <script defer="defer" src="js/main.min.js?_v=20240318112353"></script>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <input type="checkbox" id="mobile-menu">
+      <label class="menu-hamburger" for="mobile-menu">
+        <span class="menu-hamburger__line"></span>
+      </label>
+
+      <div class="mobile-menu">
+        <form class="mobile-search-bar" action="./search.html">
+    <div class="mobile-search-bar__input">
+        <span class="icon icon-search">
+        </span>
+        <label for="search" hidden="hidden">Пошук</label>
+        <input type="search" name="search" id="search" placeholder="Пошук" required>
+    </div>
+</form>
+        <nav class="mobile-navigation">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active">
+              <a href="/" class="menu__link">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a href="./news.html" class="menu__link">Новини</a>
+            </li>
+            <li class="menu__item">
+              <a href="./articles.html" class="menu__link">Статі</a>
+            </li>
+            <li class="menu__item">
+              <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
+            </li>
+            <li class="menu__item">
+              <a href="./expert-articles.html" class="menu__link">Думки</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                Редакція
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./about-us.html" class="menu__link">Про Нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="./editor-policy.html" class="menu__link">Політика Редагування</a>
+            </li>
+            <li class="menu__item">
+              <a href="./usage-policy.html" class="menu__link">Правила використання матеріалів</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mb-4 social-media">
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Facebook">
+              <span class="icon icon-facebook"></span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Twitter">
+              <span class="icon icon-twitter"></span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Telegram">
+              <span class="icon icon-telegram"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="search-bar" action="./search.html">
+    <button type="button" class="search-bar__btn-open">
+        <span class="icon icon-search">
+        </span>
+    </button>
+    <div class="search-bar__input">
+        <label for="search" hidden="hidden">Пошук</label>
+        <input type="search" name="search" id="search" required>
+        <button type="button" class="search-bar__btn-close">
+            &#x2715;
+        </button>
+    </div>
+</form>
+
+      <a href="/" class="logo header__logo">
+        <img src="./images/logo.svg" alt="">
+      </a>
+
+      <div class="header__buttons">
+        <button id="donation-btn" class="button button--primary" title="Підтримати">
+          <span class="icon icon-donation"></span>
+          Підтримати
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <nav class="main-navigation">
+    <ul class="menu__list">
+        <li class="menu__item menu__item--active">
+            <a href="/" class="menu__link">Головна</a>
+        </li>
+        <li class="menu__item">
+            <a href="./news.html" class="menu__link">Новини</a>
+        </li>
+        <li class="menu__item">
+            <a href="./articles.html" class="menu__link">Статі</a>
+        </li>
+        <li class="menu__item">
+            <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
+        </li>
+        <li class="menu__item">
+            <a href="./expert-articles.html" class="menu__link">Думки</a>
+        </li>
+        <li class="menu__item menu-dropdown">
+            <a href="#" class="menu-dropdown__button menu-dropdown__button--icon-append">
+                Редакція
+                <span class="icon icon-arrow-down"></span>
+            </a>
+            <ul class="menu-dropdown__content">
+                <li>
+                    <a href="./about-us.html">Про Нас</a>
+                </li>
+                <li>
+                    <a href="./editor-policy.html">Політика Редагування</a>
+                </li>
+                <li>
+                    <a href="./usage-policy.html">Правила використання матеріалів</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    </div>
+
+    <div class="row">
+      <hr class="divider-h">
+    </div>
+  </div>
+</header>
+
+<main>
+    <div data-observ></div>
+    <section class="post-page">
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Думки
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Канада на весні...
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row row--wrap">
+                <div class="post-page__header">
+                    <h1 class="post-page__heading">
+                        Канада навесні передасть Україні понад 800 дронів
+                    </h1>
+                    <div class="post-page__authors">
+                        <div class="post-author-card">
+                            <div class="post-author-card__image">
+                                <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                            </div>
+                            <div class="post-author-card__wrapper">
+                                <a class="post-author-card__name" href="./author.html">
+                                    Аполлінарія Гарматозарядний
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-author-card">
+                            <div class="post-author-card__image">
+                                <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                            </div>
+                            <div class="post-author-card__wrapper">
+                                <a class="post-author-card__name" href="./author.html">
+                                    Любомир Коновал
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-author-card">
+                            <div class="post-author-card__image">
+                                <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                            </div>
+                            <div class="post-author-card__wrapper">
+                                <a class="post-author-card__name" href="./author.html">
+                                    Софія Коновал
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-page__header__info">
+                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        <span class="reading-time">
+                                5 хвилин на читання
+                            </span>
+                        <div class="social-share">
+                            <ul class="social-share__list">
+                                <li class="social-share__item">
+                                    <a href="#" class="social-share__link" title="Facebook">
+                                        <span class="icon icon-facebook"></span>
+                                    </a>
+                                </li>
+                                <li class="social-share__item">
+                                    <a href="#" class="social-share__link" title="Twitter">
+                                        <span class="icon icon-twitter"></span>
+                                    </a>
+                                </li>
+                                <li class="social-share__item">
+                                    <a href="#" class="social-share__link" title="Telegram">
+                                        <span class="icon icon-telegram"></span>
+                                    </a>
+                                </li>
+                                <li class="social-share__item">
+                                    <a href="#" class="social-share__link" title="Copy Link">
+                                        <span class="icon icon-copy"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-page__content">
+                    <figure>
+                        <picture>
+                            <img src="./images/placeholders/content-image-placeholder.png" alt="Content Image Placeholder">
+                        </picture>
+                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                    </figure>
+                    <p>
+                        Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський
+                        доларів (близько 73 млн дол США).
+                    </p>
+                    <p class="my-4">
+                        <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
+                    </p>
+                    <h2>
+                        Дрони: Нова Сила Української Оборони
+                    </h2>
+                    <blockquote>
+                        <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про
+                            тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі
+                            України за свою безпеку</p>
+                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                    </blockquote>
+                    <p>
+                        <strong>Деталі:</strong> Україна здійснила стратегічний крок у підвищенні своєї
+                        обороноздатності, укладаючи угоду з Канадою на постачання бойових дронів. Ця угода, яка охоплює
+                        постачання військових дронів від провідного канадського виробника, є важливим кроком для України
+                        в зміцненні своєї оборонної потужності в умовах загострення геополітичної ситуації у регіоні,
+                        цитує
+                        <a class="tooltip" href="">
+                            Demonstration
+                            <span>
+                                    <picture><source srcset="https://www.scriptol.com/images/apache.webp" type="image/webp"><img src="https://www.scriptol.com/images/apache.png"></picture>
+                                    <h3>How use my site</h3>The description with an image.
+                                </span>
+                        </a>.
+                    </p>
+                    <p>
+                        Важливість цієї угоди підкреслюється не лише технологічними аспектами, але й політичними та
+                        стратегічними перспективами, які вона відкриває для України. Давайте розглянемо деталі цієї
+                        угоди та її потенційні наслідки.
+                    </p>
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які
+                        забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі
+                        дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
+
+                    <div class="image-slider-with-thumbnails">
+    <div class="splide primary-slider" role="group" aria-label="Main Image Slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-1.jpeg" alt="Image Slide 1">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-2.jpeg" alt="Image Slide 2">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-3.jpeg" alt="Image Slide 3">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-4.jpeg" alt="Image Slide 4">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="splide secondary-slider" role="group" aria-label="Secondary Image Slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-1.jpeg" alt="Image Slide 1">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-2.jpeg" alt="Image Slide 2">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-3.jpeg" alt="Image Slide 3">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-4.jpeg" alt="Image Slide 4">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    <blockquote>
+                        <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про
+                            тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі
+                            України за свою безпеку</p>
+                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                    </blockquote>
+
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які
+                        забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі
+                        дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
+
+                    <ol>
+                        <li>
+                            Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати
+                            розвідку, наносити удари по ворожих цілях та координувати військові операції з високою
+                            точністю та ефективністю (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                        </li>
+                        <li>
+                            Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично
+                            важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                        </li>
+                    </ol>
+
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які
+                        забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі
+                        дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати
+                            розвідку, наносити удари по ворожих цілях та координувати військові операції з високою
+                            точністю та ефективністю (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                        </li>
+                        <li>
+                            Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично
+                            важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                        </li>
+                    </ul>
+
+                    <div class="post-tags">
+                        <strong>Тема:</strong>
+                        <ul class="post-tags__list">
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Україна
+                                </a>
+                            </li>
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Війна
+                                </a>
+                            </li>
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Зброя
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr>
+                </div>
+
+                <section class="post-banner section">
+    <h2 class="post-banner__heading">Підписуйтесь на нас у соціальних мережах.</h2>
+    <img class="post-banner__logo" src="./images/logo.svg" alt="Logo">
+    <div class="post-banner__buttons">
+        <a class="button button--primary" href="#">
+            <i class="icon icon-telegram"></i>
+        </a>
+        <a class="button button--primary" href="#">
+            <i class="icon icon-instagram"></i>
+        </a>
+        <a class="button button--primary" href="#">
+            <i class="icon icon-facebook"></i>
+        </a>
+        <a class="button button--primary" href="#">
+            <i class="icon icon-twitter"></i>
+        </a>
+    </div>
+</section>
+
+                <div class="post-page__header">
+                    <h1 class="post-page__heading">
+                        Канада навесні передасть Україні понад 800 дронів
+                    </h1>
+                    <div class="post-page__authors">
+                        <div class="post-author-card">
+                            <div class="post-author-card__image">
+                                <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                            </div>
+                            <div class="post-author-card__wrapper">
+                                <a class="post-author-card__name" href="./author.html">
+                                    Аполлінарія Гарматозарядний
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-author-card">
+                            <div class="post-author-card__image">
+                                <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Author"></picture>
+                            </div>
+                            <div class="post-author-card__wrapper">
+                                <a class="post-author-card__name" href="./author.html">
+                                    Аполлінарія Гарматозарядний
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-page__header__info">
+                        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                        <div class="social-share">
+                            <ul class="social-share__list">
+                                <li class="social-share__item">
+                                    <a href="#" class="social-share__link" title="Facebook">
+                                        <span class="icon icon-facebook"></span>
+                                    </a>
+                                </li>
+                                <li class="social-share__item">
+                                    <a href="#" class="social-share__link" title="Twitter">
+                                        <span class="icon icon-twitter"></span>
+                                    </a>
+                                </li>
+                                <li class="social-share__item">
+                                    <a href="#" class="social-share__link" title="Telegram">
+                                        <span class="icon icon-telegram"></span>
+                                    </a>
+                                </li>
+                                <li class="social-share__item">
+                                    <a href="#" class="social-share__link" title="Copy Link">
+                                        <span class="icon icon-copy"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-page__content">
+                    <figure>
+                        <picture>
+                            <img src="./images/placeholders/content-image-placeholder.png" alt="Content Image Placeholder">
+                        </picture>
+                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                    </figure>
+                    <p>
+                        Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський
+                        доларів (близько 73 млн дол США).
+                    </p>
+                    <p class="my-4">
+                        <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
+                    </p>
+                    <h2>
+                        Дрони: Нова Сила Української Оборони
+                    </h2>
+                    <blockquote>
+                        <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про
+                            тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі
+                            України за свою безпеку</p>
+                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                    </blockquote>
+                    <p>
+                        <strong>Деталі:</strong> Україна здійснила стратегічний крок у підвищенні своєї
+                        обороноздатності, укладаючи угоду з Канадою на постачання бойових дронів. Ця угода, яка охоплює
+                        постачання військових дронів від провідного канадського виробника, є важливим кроком для України
+                        в зміцненні своєї оборонної потужності в умовах загострення геополітичної ситуації у регіоні,
+                        цитує
+                        <a class="tooltip" href="">
+                            Demonstration
+                            <span>
+                                    <picture><source srcset="https://www.scriptol.com/images/apache.webp" type="image/webp"><img src="https://www.scriptol.com/images/apache.png"></picture>
+                                    <h3>How use my site</h3>The description with an image.
+                                </span>
+                        </a>.
+                    </p>
+                    <p>
+                        Важливість цієї угоди підкреслюється не лише технологічними аспектами, але й політичними та
+                        стратегічними перспективами, які вона відкриває для України. Давайте розглянемо деталі цієї
+                        угоди та її потенційні наслідки.
+                    </p>
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які
+                        забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі
+                        дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
+
+                    <div class="image-slider-with-thumbnails">
+    <div class="splide primary-slider" role="group" aria-label="Main Image Slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-1.jpeg" alt="Image Slide 1">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-2.jpeg" alt="Image Slide 2">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-3.jpeg" alt="Image Slide 3">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-4.jpeg" alt="Image Slide 4">
+                    </picture>
+                    <span class="caption">Ілюстраційне фото SKYRANGER R70, скріншот з відео</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="splide secondary-slider" role="group" aria-label="Secondary Image Slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-1.jpeg" alt="Image Slide 1">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-2.jpeg" alt="Image Slide 2">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-3.jpeg" alt="Image Slide 3">
+                    </picture>
+                </li>
+                <li class="splide__slide">
+                    <picture>
+                        <img src="./images/slides/image-slide-4.jpeg" alt="Image Slide 4">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    <blockquote>
+                        <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про
+                            тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі
+                            України за свою безпеку</p>
+                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                    </blockquote>
+
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які
+                        забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі
+                        дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
+                    <figure>
+                        <picture>
+                            <img src="./images/slides/image-slide-1.jpeg" alt="Content Image Placeholder">
+                        </picture>
+                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                    </figure>
+                    <figure>
+                        <picture>
+                            <img src="./images/slides/image-slide-2.jpeg" alt="Content Image Placeholder">
+                        </picture>
+                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                    </figure>
+                    <ol>
+                        <li>
+                            Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати
+                            розвідку, наносити удари по ворожих цілях та координувати військові операції з високою
+                            точністю та ефективністю (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                        </li>
+                        <li>
+                            Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично
+                            важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                        </li>
+                    </ol>
+
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які
+                        забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі
+                        дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати
+                            розвідку, наносити удари по ворожих цілях та координувати військові операції з високою
+                            точністю та ефективністю (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                        </li>
+                        <li>
+                            Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично
+                            важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                        </li>
+                    </ul>
+
+                    <div class="post-tags">
+                        <strong>Тема:</strong>
+                        <ul class="post-tags__list">
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Україна
+                                </a>
+                            </li>
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Війна
+                                </a>
+                            </li>
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Зброя
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row mb-4">
+      <a href="/" class="logo footer__logo">
+        <img src="./images/footer-logo.svg" alt="Footer Logo">
+      </a>
+    </div>
+    <div class="row row--wrap mb-5">
+      <div class="px-0 col-3 footer__info">
+        <h6>
+          <strong>Ми у соцмережах</strong>
+        </h6>
+        <ul class="mb-4 social-media-list">
+          <li class="social-media-list__item">
+            <a class="social-media-list__link" href="#" title="Facebook">
+              <span class="icon icon-facebook"></span>
+            </a>
+          </li>
+          <li class="social-media-list__item">
+            <a class="social-media-list__link" href="#" title="Twitter">
+              <span class="icon icon-twitter"></span>
+            </a>
+          </li>
+          <li class="social-media-list__item">
+            <a class="social-media-list__link" href="#" title="Telegram">
+              <span class="icon icon-telegram"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="col-6 footer__navigation px-0">
+        <div class="col-6 text-left">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./news.html" class="menu__link">
+                Новини
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./articles.html" class="menu__link">
+                Статі
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./special-projects.html" class="menu__link">
+                Спецпроекти
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./expert-articles.html" class="menu__link">
+                Думки
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="col-6 text-left">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./about-us.html" class="menu__link">
+                Про нас
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./editor-policy.html" class="menu__link">
+                Редакційна політика
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./usage-policy.html" class="menu__link">
+                Правила використання матеріалів
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./advertising.html" class="menu__link">
+                Реклама
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+      <div class="px-0 col-3 footer__info">
+        <h6>
+          <strong>Розвиваємо проект за підтримки:</strong>
+        </h6>
+        <a href="https://mediadevelopmentfoundation.org/">
+          <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
+        </a>
+        <h6 class="mb-2 text-uppercase">
+          <strong>Дизайн та розробка:</strong>
+        </h6>
+        <a href="#">
+          <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
+        </a>
+      </div>
+    </div>
+    <div class="row row--wrap justify-content-center">
+      <div class="text-center w-75">
+        <p>
+          &copy; ©2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
+          <br>
+          <br>
+          <a class="text-underline" href="#">
+            Права та Інформація, щоб в нас все було добре
+          </a>
+          <br>
+          <br>
+          Усі права захищені.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

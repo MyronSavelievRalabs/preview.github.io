@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <style>html { opacity: 0; }</style>
   <meta charset="UTF-8">
@@ -9,9 +9,9 @@
   <title>Автор</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240305102820">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240318112353">
 
-  <script defer="defer" src="js/main.min.js?_v=20240305102820"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240318112353"></script>
 </head>
 
 <body>
@@ -19,13 +19,80 @@
 <header class="header">
   <div class="container">
     <div class="row">
+      <input type="checkbox" id="mobile-menu">
+      <label class="menu-hamburger" for="mobile-menu">
+        <span class="menu-hamburger__line"></span>
+      </label>
+
+      <div class="mobile-menu">
+        <form class="mobile-search-bar" action="./search.html">
+    <div class="mobile-search-bar__input">
+        <span class="icon icon-search">
+        </span>
+        <label for="search" hidden="hidden">Пошук</label>
+        <input type="search" name="search" id="search" placeholder="Пошук" required>
+    </div>
+</form>
+        <nav class="mobile-navigation">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active">
+              <a href="/" class="menu__link">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a href="./news.html" class="menu__link">Новини</a>
+            </li>
+            <li class="menu__item">
+              <a href="./articles.html" class="menu__link">Статі</a>
+            </li>
+            <li class="menu__item">
+              <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
+            </li>
+            <li class="menu__item">
+              <a href="./expert-articles.html" class="menu__link">Думки</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                Редакція
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./about-us.html" class="menu__link">Про Нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="./editor-policy.html" class="menu__link">Політика Редагування</a>
+            </li>
+            <li class="menu__item">
+              <a href="./usage-policy.html" class="menu__link">Правила використання матеріалів</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mb-4 social-media">
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Facebook">
+              <span class="icon icon-facebook"></span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Twitter">
+              <span class="icon icon-twitter"></span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link" href="#" title="Telegram">
+              <span class="icon icon-telegram"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <form class="search-bar" action="./search.html">
     <button type="button" class="search-bar__btn-open">
-        <i class="icon icon-search">
-        </i>
+        <span class="icon icon-search">
+        </span>
     </button>
     <div class="search-bar__input">
-        <input type="search" name="search" id="search">
+        <label for="search" hidden="hidden">Пошук</label>
+        <input type="search" name="search" id="search" required>
         <button type="button" class="search-bar__btn-close">
             &#x2715;
         </button>
@@ -37,12 +104,13 @@
       </a>
 
       <div class="header__buttons">
-        <button id="donation-btn" class="button button--primary">
-          <i class="icon icon-donation"></i>
+        <button id="donation-btn" class="button button--primary" title="Підтримати">
+          <span class="icon icon-donation"></span>
           Підтримати
         </button>
       </div>
     </div>
+
     <div class="row">
       <nav class="main-navigation">
     <ul class="menu__list">
@@ -64,7 +132,7 @@
         <li class="menu__item menu-dropdown">
             <a href="#" class="menu-dropdown__button menu-dropdown__button--icon-append">
                 Редакція
-                <i class="icon icon-arrow-down"></i>
+                <span class="icon icon-arrow-down"></span>
             </a>
             <ul class="menu-dropdown__content">
                 <li>
@@ -81,6 +149,7 @@
     </ul>
 </nav>
     </div>
+
     <div class="row">
       <hr class="divider-h">
     </div>
@@ -100,7 +169,7 @@
         </div>
 
         <div class="row mb-5">
-            <div class="col-8 px-0">
+            <div class="px-0 col-8">
                 <div class="author-card">
                     <div class="author-card__image">
                         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Author Image"></picture>
@@ -114,28 +183,28 @@
                         </div>
                         <ul class="author-card__socials">
                             <li class="author-card__socials__item">
-                                <a class="author-card__socials__link" href="#">
-                                    <i class="icon icon-facebook" title="Facebook"></i>
+                                <a class="author-card__socials__link" href="#" title="Facebook">
+                                    <span class="icon icon-facebook"></span>
                                 </a>
                             </li>
                             <li class="author-card__socials__item">
-                                <a class="author-card__socials__link" href="#">
-                                    <i class="icon icon-instagram" title="Instagram"></i>
+                                <a class="author-card__socials__link" href="#" title="Instagram">
+                                    <span class="icon icon-instagram"></span>
                                 </a>
                             </li>
                             <li class="author-card__socials__item">
-                                <a class="author-card__socials__link" href="#">
-                                    <i class="icon icon-twitter" title="Twitter"></i>
+                                <a class="author-card__socials__link" href="#" title="Twitter">
+                                    <span class="icon icon-twitter"></span>
                                 </a>
                             </li>
                             <li class="author-card__socials__item">
-                                <a class="author-card__socials__link" href="#">
-                                    <i class="icon icon-telegram" title="Telegram"></i>
+                                <a class="author-card__socials__link" href="#" title="Telegram">
+                                    <span class="icon icon-telegram"></span>
                                 </a>
                             </li>
                             <li class="author-card__socials__item">
-                                <a class="author-card__socials__link" href="#">
-                                    <i class="icon icon-viber" title="Viber"></i>
+                                <a class="author-card__socials__link" href="#" title="Viber">
+                                    <span class="icon icon-viber"></span>
                                 </a>
                             </li>
                         </ul>
@@ -156,146 +225,122 @@
                     <div class="article-rows">
                         
                         <div class="article-row article-row--with-image">
+                            <div class="article-row__tags">
+                                <span class="article-card__tag--important article-row__tag">Оновлено</span>
+                            </div>
                             <div class="article-row__image">
                                 <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
                             </div>
                             <div class="article-row__wrapper">
                                 <div class="article-row__header">
-                                    <span class="article-row__tag">Інфографіка</span>
-                                    <span class="article-row__category">Війна</span>
-                                </div>
-                                <a href="./post-page.html" class="article-row__title">
-                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                                </a>
-                                <div class="article-row__text">
-                                    Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
-                                </div>
-                                <div class="article-row__bottom">
+                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                     <span class="reading-time">
                                         5 хвилин на читання
                                     </span>
-                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                 </div>
+                                <a href="./post-page.html" class="article-row__title" title="Title">
+                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                                </a>
                             </div>
                         </div>
                         
                         <div class="article-row article-row--with-image">
+                            <div class="article-row__tags">
+                                <span class="article-card__tag--important article-row__tag">Оновлено</span>
+                            </div>
                             <div class="article-row__image">
                                 <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
                             </div>
                             <div class="article-row__wrapper">
                                 <div class="article-row__header">
-                                    <span class="article-row__tag">Інфографіка</span>
-                                    <span class="article-row__category">Війна</span>
-                                </div>
-                                <a href="./post-page.html" class="article-row__title">
-                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                                </a>
-                                <div class="article-row__text">
-                                    Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
-                                </div>
-                                <div class="article-row__bottom">
+                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                     <span class="reading-time">
                                         5 хвилин на читання
                                     </span>
-                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                 </div>
+                                <a href="./post-page.html" class="article-row__title" title="Title">
+                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                                </a>
                             </div>
                         </div>
                         
                         <div class="article-row article-row--with-image">
+                            <div class="article-row__tags">
+                                <span class="article-card__tag--important article-row__tag">Оновлено</span>
+                            </div>
                             <div class="article-row__image">
                                 <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
                             </div>
                             <div class="article-row__wrapper">
                                 <div class="article-row__header">
-                                    <span class="article-row__tag">Інфографіка</span>
-                                    <span class="article-row__category">Війна</span>
-                                </div>
-                                <a href="./post-page.html" class="article-row__title">
-                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                                </a>
-                                <div class="article-row__text">
-                                    Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
-                                </div>
-                                <div class="article-row__bottom">
+                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                     <span class="reading-time">
                                         5 хвилин на читання
                                     </span>
-                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                 </div>
+                                <a href="./post-page.html" class="article-row__title" title="Title">
+                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                                </a>
                             </div>
                         </div>
                         
                         <div class="article-row article-row--with-image">
+                            <div class="article-row__tags">
+                                <span class="article-card__tag--important article-row__tag">Оновлено</span>
+                            </div>
                             <div class="article-row__image">
                                 <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
                             </div>
                             <div class="article-row__wrapper">
                                 <div class="article-row__header">
-                                    <span class="article-row__tag">Інфографіка</span>
-                                    <span class="article-row__category">Війна</span>
-                                </div>
-                                <a href="./post-page.html" class="article-row__title">
-                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                                </a>
-                                <div class="article-row__text">
-                                    Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
-                                </div>
-                                <div class="article-row__bottom">
+                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                     <span class="reading-time">
                                         5 хвилин на читання
                                     </span>
-                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                 </div>
+                                <a href="./post-page.html" class="article-row__title" title="Title">
+                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                                </a>
                             </div>
                         </div>
                         
                         <div class="article-row article-row--with-image">
+                            <div class="article-row__tags">
+                                <span class="article-card__tag--important article-row__tag">Оновлено</span>
+                            </div>
                             <div class="article-row__image">
                                 <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
                             </div>
                             <div class="article-row__wrapper">
                                 <div class="article-row__header">
-                                    <span class="article-row__tag">Інфографіка</span>
-                                    <span class="article-row__category">Війна</span>
-                                </div>
-                                <a href="./post-page.html" class="article-row__title">
-                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                                </a>
-                                <div class="article-row__text">
-                                    Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
-                                </div>
-                                <div class="article-row__bottom">
+                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                     <span class="reading-time">
                                         5 хвилин на читання
                                     </span>
-                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                 </div>
+                                <a href="./post-page.html" class="article-row__title" title="Title">
+                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                                </a>
                             </div>
                         </div>
                         
                         <div class="article-row article-row--with-image">
+                            <div class="article-row__tags">
+                                <span class="article-card__tag--important article-row__tag">Оновлено</span>
+                            </div>
                             <div class="article-row__image">
                                 <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
                             </div>
                             <div class="article-row__wrapper">
                                 <div class="article-row__header">
-                                    <span class="article-row__tag">Інфографіка</span>
-                                    <span class="article-row__category">Війна</span>
-                                </div>
-                                <a href="./post-page.html" class="article-row__title">
-                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                                </a>
-                                <div class="article-row__text">
-                                    Військові, яких росія оголосила нібито загиблими після падіння літака Іл-76 у Бєлгородській області, незмінно вважаються військовополоненими.
-                                </div>
-                                <div class="article-row__bottom">
+                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                     <span class="reading-time">
                                         5 хвилин на читання
                                     </span>
-                                    <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                                 </div>
+                                <a href="./post-page.html" class="article-row__title" title="Title">
+                                    Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+                                </a>
                             </div>
                         </div>
                         
@@ -303,30 +348,30 @@
                     <nav class="pagination" aria-label="articles navigation">
     <ul class="pagination__list">
         <li class="pagination__item pagination__item--disabled">
-            <a class="pagination__link pagination__link--prev" href="?page=2" rel="prev">
-                <i class="icon icon-arrow-left"></i>
+            <a class="pagination__link pagination__link--prev" href="?page=2" rel="prev" title="Previous">
+                <span class="icon icon-arrow-left"></span>
             </a>
         </li>
 
         <li class="pagination__item">
-            <a class="pagination__link" href="?page=1">1</a>
+            <a class="pagination__link" href="?page=1" title="Page 1">1</a>
         </li>
         <li class="pagination__item">
-            <a class="pagination__link" href="?page=2">2</a>
+            <a class="pagination__link" href="?page=2" title="Page 2">2</a>
         </li>
         <li class="pagination__item pagination__item--active">
-            <a class="pagination__link" href="?page=3">3</a>
+            <a class="pagination__link" href="?page=3" title="Page 3">3</a>
         </li>
         <li class="pagination__item">
-            <a class="pagination__link" href="?page=4">4</a>
+            <a class="pagination__link" href="?page=4" title="Page 4">4</a>
         </li>
         <li class="pagination__item">
-            <a class="pagination__link" href="?page=5">5</a>
+            <a class="pagination__link" href="?page=5" title="Page 5">5</a>
         </li>
 
         <li class="pagination__item">
-            <a class="pagination__link pagination__link--next" href="?page=4" rel="next">
-                <i class="icon icon-arrow-right"></i>
+            <a class="pagination__link pagination__link--next" href="?page=4" rel="next" title="Next">
+                <span class="icon icon-arrow-right"></span>
             </a>
         </li>
     </ul>
@@ -357,39 +402,30 @@
       </a>
     </div>
     <div class="row row--wrap mb-5">
-      <div class="px-0 col-4 footer__info">
+      <div class="px-0 col-3 footer__info">
         <h6>
           <strong>Ми у соцмережах</strong>
         </h6>
         <ul class="mb-4 social-media-list">
           <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">
-              <i class="icon icon-facebook"></i>
+            <a class="social-media-list__link" href="#" title="Facebook">
+              <span class="icon icon-facebook"></span>
             </a>
           </li>
           <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">
-              <i class="icon icon-twitter"></i>
+            <a class="social-media-list__link" href="#" title="Twitter">
+              <span class="icon icon-twitter"></span>
             </a>
           </li>
           <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">
-              <i class="icon icon-telegram"></i>
+            <a class="social-media-list__link" href="#" title="Telegram">
+              <span class="icon icon-telegram"></span>
             </a>
           </li>
         </ul>
-        <h6>
-          <strong>Розвиваємо проект за підтримки:</strong>
-        </h6>
-        <a href="https://mediadevelopmentfoundation.org/">
-          <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
-        </a>
       </div>
-      <nav class="col-8 px-0 footer__navigation">
+      <nav class="px-0 col-6 footer__navigation">
         <div class="col-6 text-left">
-          <h5 class="footer__navigation-heading">
-            Новини
-          </h5>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="./news.html" class="menu__link">
@@ -414,9 +450,6 @@
           </ul>
         </div>
         <nav class="col-6 text-left">
-          <h5 class="footer__navigation-heading">
-            Редакція
-          </h5>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="./about-us.html" class="menu__link">
@@ -441,25 +474,13 @@
           </ul>
         </nav>
       </nav>
-    </div>
-    <div class="row row--wrap">
-      <div class="col-12 text-center">
-        <p>
-          &copy; 2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
-          <br>
-          <br>
-          <a class="text-underline" href="#">
-            Права та Інформація щоб в нас все було добре
-          </a>
-          <br>
-          <br>
-          Усі права захищені.
-        </p>
-      </div>
-    </div>
-    <hr class="footer__divider">
-    <div class="row row--wrap">
-      <div class="col-12 text-center">
+      <div class="px-0 col-3 footer__info">
+        <h6>
+          <strong>Розвиваємо проект за підтримки:</strong>
+        </h6>
+        <a href="https://mediadevelopmentfoundation.org/">
+          <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
+        </a>
         <h6 class="mb-2 text-uppercase">
           <strong>Дизайн та розробка:</strong>
         </h6>
@@ -467,7 +488,21 @@
           <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
         </a>
       </div>
-
+    </div>
+    <div class="row row--wrap justify-content-center">
+      <div class="text-center w-75">
+        <p>
+          &copy; ©2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
+          <br>
+          <br>
+          <a class="text-underline" href="#">
+            Права та Інформація, щоб в нас все було добре
+          </a>
+          <br>
+          <br>
+          Усі права захищені.
+        </p>
+      </div>
     </div>
   </div>
 </footer>
