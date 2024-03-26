@@ -8,9 +8,9 @@
   <title>Стаття</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240318112353">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240326102725">
 
-  <script defer="defer" src="js/main.min.js?_v=20240318112353"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240326102725"></script>
 </head>
 
 <body>
@@ -157,7 +157,7 @@
 
 <main>
     <div data-observ></div>
-    <section class="post-page">
+    <section class="post-page post-page--with-sidebar">
         <div class="container">
             <div class="row">
                 <nav aria-label="breadcrumb">
@@ -269,11 +269,11 @@
                         </blockquote>
                         <p>
                             <strong>Деталі:</strong> Україна здійснила стратегічний крок у підвищенні своєї обороноздатності, укладаючи угоду з Канадою на постачання бойових дронів. Ця угода, яка охоплює постачання військових дронів від провідного канадського виробника, є важливим кроком для України в зміцненні своєї оборонної потужності в умовах загострення геополітичної ситуації у регіоні, цитує
-                            <a class="tooltip" href="">
-                                Demonstration
-                                <span>
-                                    <picture><source srcset="https://www.scriptol.com/images/apache.webp" type="image/webp"><img src="https://www.scriptol.com/images/apache.png"></picture>
-                                    <h3>How use my site</h3>The description with an image.
+                            <a class="tooltip" href="#">
+                                Укрінформ
+                                <span class="tooltip__content">
+                                    <picture><source srcset="./images/placeholders/tooltip-image.webp" type="image/webp"><img src="./images/placeholders/tooltip-image.jpeg" alt=""></picture>
+                                    Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
                                 </span>
                             </a>.
                         </p>
@@ -286,6 +286,15 @@
 
                         <div class="image-slider-with-thumbnails">
     <div class="splide primary-slider" role="group" aria-label="Main Image Slider">
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <i class="icon icon-arrow-left"></i>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <i class="icon icon-arrow-right"></i>
+            </button>
+        </div>
+
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
@@ -494,11 +503,11 @@
                         </blockquote>
                         <p>
                             <strong>Деталі:</strong> Україна здійснила стратегічний крок у підвищенні своєї обороноздатності, укладаючи угоду з Канадою на постачання бойових дронів. Ця угода, яка охоплює постачання військових дронів від провідного канадського виробника, є важливим кроком для України в зміцненні своєї оборонної потужності в умовах загострення геополітичної ситуації у регіоні, цитує
-                            <a class="tooltip" href="">
-                                Demonstration
-                                <span>
-                                    <picture><source srcset="https://www.scriptol.com/images/apache.webp" type="image/webp"><img src="https://www.scriptol.com/images/apache.png"></picture>
-                                    <h3>How use my site</h3>The description with an image.
+                            <a class="tooltip" href="#">
+                                Укрінформ
+                                <span class="tooltip__content">
+                                    <picture><source srcset="./images/placeholders/tooltip-image.webp" type="image/webp"><img src="./images/placeholders/tooltip-image.jpeg" alt=""></picture>
+                                    Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
                                 </span>
                             </a>.
                         </p>
@@ -511,6 +520,15 @@
 
                         <div class="image-slider-with-thumbnails">
     <div class="splide primary-slider" role="group" aria-label="Main Image Slider">
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <i class="icon icon-arrow-left"></i>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <i class="icon icon-arrow-right"></i>
+            </button>
+        </div>
+
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
@@ -649,13 +667,13 @@
     </h2>
 
     <div class="article-time-rows">
-        <div class="article-time-row">
+        <div class="article-time-row article-time-row--important">
             <div class="article-time-row__header">
                 <time datetime="14:30">14:30</time>
             </div>
             <div class="article-time-row__wrapper">
                 <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                    Польські митники не хотіли ставити е-пломби на транзитні фури.
                 </a>
             </div>
         </div>
@@ -753,7 +771,7 @@
         </div>
     </div>
 
-    <button class="button button--secondary recent-news__cta">
+    <button class="button button--secondary">
         Більше новин
     </button>
 </div>
@@ -839,7 +857,7 @@
         
     </div>
 
-    <div class="article-cards">
+    <div class="article-small-cards">
         <div class="article-small-card">
             <div class="article-small-card__image">
                 <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
@@ -885,6 +903,16 @@
             </a>
         </div>
     </div>
+
+    <button class="button button--secondary">
+        Більше новин
+    </button>
+</div>
+                    <div class="recent-news">
+    <h2 class="recent-news__heading">
+        <img src="./images/logo-yellow.svg" alt="Логотип">
+        Останні новини
+    </h2>
 
     <div class="article-rows">
         <div class="article-row article-row--with-image">
@@ -894,9 +922,6 @@
             <div class="article-row__wrapper">
                 <div class="article-row__header">
                     <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                    <span class="reading-time">
-                        5 хвилин на читання
-                    </span>
                 </div>
                 <a href="./post-page.html" class="article-row__title" title="Title">
                     Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
@@ -905,7 +930,7 @@
         </div>
     </div>
 
-    <button class="button button--secondary recent-news__cta">
+    <button class="button button--secondary">
         Більше новин
     </button>
 </div>
@@ -917,14 +942,12 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="row mb-4">
-      <a href="/" class="logo footer__logo">
-        <img src="./images/footer-logo.svg" alt="Footer Logo">
-      </a>
-    </div>
     <div class="row row--wrap mb-5">
       <div class="px-0 col-3 footer__info">
-        <h6>
+        <a href="/" class="link--with-image footer__logo logo">
+          <img src="./images/footer-logo.svg" alt="Footer Logo">
+        </a>
+        <h6 class="mt-4">
           <strong>Ми у соцмережах</strong>
         </h6>
         <ul class="mb-4 social-media-list">
@@ -999,19 +1022,19 @@
         <h6>
           <strong>Розвиваємо проект за підтримки:</strong>
         </h6>
-        <a href="https://mediadevelopmentfoundation.org/">
+        <a class="link--with-image" href="https://mediadevelopmentfoundation.org/">
           <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
         </a>
-        <h6 class="mb-2 text-uppercase">
+        <h6 class="mt-3 my-2 text-uppercase">
           <strong>Дизайн та розробка:</strong>
         </h6>
-        <a href="#">
+        <a class="link--with-image" href="#">
           <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
         </a>
       </div>
     </div>
     <div class="row row--wrap justify-content-center">
-      <div class="text-center w-75">
+      <div class="text-center w-50" style="font-size: 12px;">
         <p>
           &copy; ©2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
           <br>
