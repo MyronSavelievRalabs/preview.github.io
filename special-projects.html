@@ -8,16 +8,16 @@
   <title>Спецпроєкти</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240326102725">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240401140543">
 
-  <script defer="defer" src="js/main.min.js?_v=20240326102725"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240401140543"></script>
 </head>
 
 <body>
 
 <header class="header">
   <div class="container">
-    <div class="row">
+    <div class="header__row">
       <input type="checkbox" id="mobile-menu">
       <label class="menu-hamburger" for="mobile-menu">
         <span class="menu-hamburger__line"></span>
@@ -110,7 +110,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="header__row header__row">
       <nav class="main-navigation">
     <ul class="menu__list">
         <li class="menu__item menu__item--active">
@@ -149,9 +149,7 @@
 </nav>
     </div>
 
-    <div class="row">
-      <hr class="divider-h">
-    </div>
+    <hr class="divider-h">
   </div>
 </header>
 
@@ -159,18 +157,94 @@
     <div data-observ></div>
     <section>
         <div class="container">
-            <div class="row">
-                <div class="page__header">
-                    <h2>
-                        <img src="./images/logo-half-green.svg" alt="Logo">
-                        Статті
-                    </h2>
-                </div>
+            <header class="page__header">
+                <h1>
+                    <img src="./images/logo-half-green.svg" alt="Logo">
+                    Статті
+                </h1>
+            </header>
+
+            <div class="article-cards article-cards--grid article-cards--grid-col-3">
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
+                        <div class="article-card__tags">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <div class="article-card__image">
+                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+                        </div>
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
+                        <div class="article-card__tags">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <div class="article-card__image">
+                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+                        </div>
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
+                        <div class="article-card__tags">
+                            <span class="article-card__tag">Оновлено</span>
+                            <span class="article-card__category">Політика</span>
+                        </div>
+                        <div class="article-card__image">
+                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
+                        </div>
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
             </div>
 
-            <div class="row">
-                <div class="article-cards article-cards--grid article-cards--with-featured">
-                    <div class="article-card article-card--featured">
+            <section class="banner section">
+                <h2 class="banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
+                    послуги.</h2>
+                <img class="banner__logo" src="./images/logo.svg" alt="Logo">
+                <button class="button button--primary banner__cta">
+                    Підтримати
+                </button>
+            </section>
+
+            <div class="article-cards article-cards--grid article-cards--grid-col-3">
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -178,17 +252,21 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card article-card--featured">
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -196,20 +274,21 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                </div>
-                <hr class="my-5">
-                <div class="article-cards article-cards--grid article-cards--grid-col-3">
-                    <div class="article-card">
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -217,17 +296,21 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card">
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -235,17 +318,21 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card">
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -253,27 +340,21 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                </div>
-                <section class="banner section">
-                    <h2 class="banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
-                        послуги.</h2>
-                    <img class="banner__logo" src="./images/logo.svg" alt="Logo">
-                    <button class="button button--primary banner__cta">
-                        Підтримати
-                    </button>
-                </section>
-                <div class="article-cards article-cards--grid article-cards--grid-col-3">
-                    <div class="article-card">
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -281,17 +362,21 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card">
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -299,17 +384,21 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card">
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -317,20 +406,21 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                </div>
-                <hr class="my-5">
-                <div class="article-cards article-cards--grid article-cards--with-featured">
-                    <div class="article-card article-card--featured">
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="article-card" href="./post-page.html">
                         <div class="article-card__tags">
                             <span class="article-card__tag">Оновлено</span>
                             <span class="article-card__category">Політика</span>
@@ -338,153 +428,22 @@
                         <div class="article-card__image">
                             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
                         </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card article-card--featured">
-                        <div class="article-card__tags">
-                            <span class="article-card__tag">Оновлено</span>
-                            <span class="article-card__category">Політика</span>
-                        </div>
-                        <div class="article-card__image">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                        </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                </div>
-                <hr class="my-5">
-                <div class="article-cards article-cards--grid article-cards--grid-col-3">
-                    <div class="article-card">
-                        <div class="article-card__tags">
-                            <span class="article-card__tag">Оновлено</span>
-                            <span class="article-card__category">Політика</span>
-                        </div>
-                        <div class="article-card__image">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                        </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card">
-                        <div class="article-card__tags">
-                            <span class="article-card__tag">Оновлено</span>
-                            <span class="article-card__category">Політика</span>
-                        </div>
-                        <div class="article-card__image">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                        </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card">
-                        <div class="article-card__tags">
-                            <span class="article-card__tag">Оновлено</span>
-                            <span class="article-card__category">Політика</span>
-                        </div>
-                        <div class="article-card__image">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                        </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                </div>
-                <hr class="my-5">
-                <div class="article-cards article-cards--grid article-cards--grid-col-3">
-                    <div class="article-card">
-                        <div class="article-card__tags">
-                            <span class="article-card__tag">Оновлено</span>
-                            <span class="article-card__category">Політика</span>
-                        </div>
-                        <div class="article-card__image">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                        </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card">
-                        <div class="article-card__tags">
-                            <span class="article-card__tag">Оновлено</span>
-                            <span class="article-card__category">Політика</span>
-                        </div>
-                        <div class="article-card__image">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                        </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                    <div class="article-card">
-                        <div class="article-card__tags">
-                            <span class="article-card__tag">Оновлено</span>
-                            <span class="article-card__category">Політика</span>
-                        </div>
-                        <div class="article-card__image">
-                            <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
-                        </div>
-                        <div class="article-card__header">
-                            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                            <span class="reading-time">
-                              5 хвилин на читання
-                            </span>
-                        </div>
-                        <a href="./post-page.html" class="article-card__title" title="Title">
-                            Бойовий медик заявив про побиття співслужбовцем. Що відомо?
-                        </a>
-                    </div>
-                </div>
+                        <hgroup class="article-card__heading">
+                            <div class="article-card__timestamps">
+                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                                <span class="reading-time">
+                                      5 хвилин на читання
+                                    </span>
+                            </div>
+                            <h3 class="article-card__title" title="Title">
+                                Бойовий медик заявив про побиття співслужбовцем. Що відомо?
+                            </h3>
+                        </hgroup>
+                    </a>
+                </article>
             </div>
 
-            <div class="row">
-                <nav class="pagination" aria-label="articles navigation">
+            <nav class="pagination" aria-label="articles navigation">
     <ul class="pagination__list">
         <li class="pagination__item pagination__item--disabled">
             <a class="pagination__link pagination__link--prev" href="?page=2" rel="prev" title="Previous">
@@ -515,7 +474,6 @@
         </li>
     </ul>
 </nav>
-            </div>
         </div>
     </section>
 </main>

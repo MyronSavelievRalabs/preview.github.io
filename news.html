@@ -8,16 +8,16 @@
   <title>Новини</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240326102725">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240401140543">
 
-  <script defer="defer" src="js/main.min.js?_v=20240326102725"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240401140543"></script>
 </head>
 
 <body>
 
 <header class="header">
   <div class="container">
-    <div class="row">
+    <div class="header__row">
       <input type="checkbox" id="mobile-menu">
       <label class="menu-hamburger" for="mobile-menu">
         <span class="menu-hamburger__line"></span>
@@ -110,7 +110,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="header__row header__row">
       <nav class="main-navigation">
     <ul class="menu__list">
         <li class="menu__item menu__item--active">
@@ -149,24 +149,20 @@
 </nav>
     </div>
 
-    <div class="row">
-      <hr class="divider-h">
-    </div>
+    <hr class="divider-h">
   </div>
 </header>
 
-<main>
+<main class="page">
     <div data-observ></div>
     <section>
         <div class="container">
-            <div class="row">
-                <header class="page__header">
-                    <h2 class="page__heading">
-                        <img src="./images/logo-half-green.svg" alt="Logo">
-                        Новини
-                    </h2>
-                </header>
-            </div>
+            <header class="page__header">
+                <h1 class="page__heading">
+                    <img src="./images/logo-half-green.svg" alt="Logo">
+                    Новини
+                </h1>
+            </header>
             <div class="row row--wrap">
                 <article class="col-8 pl-0">
                     <div class="navigation-tabs">
@@ -193,79 +189,73 @@
                         </nav>
                     </div>
                     <div class="article-time-rows">
-                        <div class="article-time-row">
-                            <div class="article-time-row__header">
-                                <time datetime="14:30">14:30</time>
-                            </div>
-                            <div class="article-time-row__wrapper">
-                                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-time-row article-time-row--important">
-                            <div class="article-time-row__header">
-                                <time datetime="14:30">14:30</time>
-                            </div>
-                            <div class="article-time-row__wrapper">
-                                <div class="article-time-row__tags">
-                                    <span class="article-card__tag--important article-time-row__tag">Оновлено</span>
-                                </div>
-                                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-time-row">
-                            <div class="article-time-row__header">
-                                <time datetime="14:30">14:30</time>
-                            </div>
-                            <div class="article-time-row__wrapper">
-
-                                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-time-row">
-                            <div class="article-time-row__header">
-                                <time datetime="14:30">14:30</time>
-                            </div>
-                            <div class="article-time-row__wrapper">
-                                <div class="article-time-row__tags">
-                                    <span class="article-card__tag--important article-time-row__tag">Оновлено</span>
-                                </div>
-                                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-time-row article-time-row--promo">
-                            <div class="article-time-row__header">
-                                <time datetime="14:30">14:30</time>
-                            </div>
-                            <div class="article-time-row__wrapper">
-                                <div class="article-time-row__tags">
-                                    <span class="article-card__tag--important article-time-row__tag">Оновлено</span>
-                                </div>
-                                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-time-row">
-                            <div class="article-time-row__header">
-                                <time datetime="14:30">14:30</time>
-                            </div>
-                            <div class="article-time-row__wrapper">
-                                <div class="article-time-row__tags">
-                                    <span class="article-card__tag--important article-time-row__tag">Оновлено</span>
-                                </div>
-                                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                                </a>
-                            </div>
-                        </div>
+                        
+                            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+                        
+                            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+                        
+                            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+                        
+                            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+                        
+                            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+                        
+                            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+                        
                     </div>
                     <nav class="date-pagination" aria-label="date pagination">
     <ul class="date-pagination__list">
@@ -287,13 +277,13 @@
                 </article>
                 <div class="col-4 pr-0">
                     <div class="side-banner">
-                        <h2 class="side-banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
-                            послуги.</h2>
-                        <img class="side-banner__logo" src="./images/logo.svg" alt="Logo">
-                        <button class="button button--primary side-banner__cta">
-                            Підтримати
-                        </button>
-                    </div>
+    <h2 class="side-banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
+        послуги.</h2>
+    <img class="side-banner__logo" src="./images/logo.svg" alt="Logo">
+    <button class="button button--primary side-banner__cta">
+        Підтримати
+    </button>
+</div>
                 </div>
             </div>
         </div>

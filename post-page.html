@@ -8,16 +8,16 @@
   <title>Стаття</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240326102725">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240401140543">
 
-  <script defer="defer" src="js/main.min.js?_v=20240326102725"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240401140543"></script>
 </head>
 
 <body>
 
 <header class="header">
   <div class="container">
-    <div class="row">
+    <div class="header__row">
       <input type="checkbox" id="mobile-menu">
       <label class="menu-hamburger" for="mobile-menu">
         <span class="menu-hamburger__line"></span>
@@ -110,7 +110,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="header__row header__row">
       <nav class="main-navigation">
     <ul class="menu__list">
         <li class="menu__item menu__item--active">
@@ -149,38 +149,34 @@
 </nav>
     </div>
 
-    <div class="row">
-      <hr class="divider-h">
-    </div>
+    <hr class="divider-h">
   </div>
 </header>
 
 <main>
     <div data-observ></div>
-    <section class="post-page post-page--with-sidebar">
-        <div class="container">
-            <div class="row">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">
-                                Головна
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#">
-                                Думки
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                            Канада на весні...
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="row row--wrap">
-                <div class="col-8 pl-0 pr-2">
-                    <div class="post-page__header">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        Головна
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        Думки
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Канада на весні...
+                </li>
+            </ol>
+        </nav>
+        <div class="row row--wrap">
+            <div class="col-8 pl-0 pr-2">
+                <section class="post-page post-page--with-sidebar">
+                    <header class="post-page__header">
                         <h1 class="post-page__heading">
                             Канада навесні передасть Україні понад 800 дронів
                         </h1>
@@ -246,7 +242,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </header>
                     <div class="post-page__content">
                         <figure>
                             <picture>
@@ -407,8 +403,9 @@
 
                         <hr>
                     </div>
+                </section>
 
-                    <section class="post-banner section">
+                <section class="post-banner section">
     <h2 class="post-banner__heading">Підписуйтесь на нас у соціальних мережах.</h2>
     <img class="post-banner__logo" src="./images/logo.svg" alt="Logo">
     <div class="post-banner__buttons">
@@ -427,6 +424,7 @@
     </div>
 </section>
 
+                <section class="post-page post-page--with-sidebar">
                     <div class="post-page__header">
                         <h1 class="post-page__heading">
                             Канада навесні передасть Україні понад 800 дронів
@@ -482,43 +480,43 @@
                         </div>
                     </div>
                     <div class="post-page__content">
-                        <figure>
-                            <picture>
-                                <img src="./images/placeholders/content-image-placeholder.png" alt="Content Image Placeholder">
-                            </picture>
-                            <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
-                        </figure>
-                        <p>
-                            Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
-                        </p>
-                        <p class="my-4">
-                            <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
-                        </p>
-                        <h2>
-                            Дрони: Нова Сила Української Оборони
-                        </h2>
-                        <blockquote>
-                            <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі України за свою безпеку</p>
-                            <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
-                        </blockquote>
-                        <p>
-                            <strong>Деталі:</strong> Україна здійснила стратегічний крок у підвищенні своєї обороноздатності, укладаючи угоду з Канадою на постачання бойових дронів. Ця угода, яка охоплює постачання військових дронів від провідного канадського виробника, є важливим кроком для України в зміцненні своєї оборонної потужності в умовах загострення геополітичної ситуації у регіоні, цитує
-                            <a class="tooltip" href="#">
-                                Укрінформ
-                                <span class="tooltip__content">
-                                    <picture><source srcset="./images/placeholders/tooltip-image.webp" type="image/webp"><img src="./images/placeholders/tooltip-image.jpeg" alt=""></picture>
-                                    Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
-                                </span>
-                            </a>.
-                        </p>
-                        <p>
-                            Важливість цієї угоди підкреслюється не лише технологічними аспектами, але й політичними та стратегічними перспективами, які вона відкриває для України. Давайте розглянемо деталі цієї угоди та її потенційні наслідки.
-                        </p>
-                        <p>
-                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
-                        </p>
+                    <figure>
+                        <picture>
+                            <img src="./images/placeholders/content-image-placeholder.png" alt="Content Image Placeholder">
+                        </picture>
+                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                    </figure>
+                    <p>
+                        Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
+                    </p>
+                    <p class="my-4">
+                        <strong>Читайте також:</strong> <a href="#">Що сказав Путін, або По той бік химеробудування</a>
+                    </p>
+                    <h2>
+                        Дрони: Нова Сила Української Оборони
+                    </h2>
+                    <blockquote>
+                        <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі України за свою безпеку</p>
+                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                    </blockquote>
+                    <p>
+                        <strong>Деталі:</strong> Україна здійснила стратегічний крок у підвищенні своєї обороноздатності, укладаючи угоду з Канадою на постачання бойових дронів. Ця угода, яка охоплює постачання військових дронів від провідного канадського виробника, є важливим кроком для України в зміцненні своєї оборонної потужності в умовах загострення геополітичної ситуації у регіоні, цитує
+                        <a class="tooltip" href="#">
+                            Укрінформ
+                            <span class="tooltip__content">
+                                <picture><source srcset="./images/placeholders/tooltip-image.webp" type="image/webp"><img src="./images/placeholders/tooltip-image.jpeg" alt=""></picture>
+                                Канада навесні планує передати Україні сотні сучасних бойових дронів на майже 100 млн канадський доларів (близько 73 млн дол США).
+                            </span>
+                        </a>.
+                    </p>
+                    <p>
+                        Важливість цієї угоди підкреслюється не лише технологічними аспектами, але й політичними та стратегічними перспективами, які вона відкриває для України. Давайте розглянемо деталі цієї угоди та її потенційні наслідки.
+                    </p>
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
 
-                        <div class="image-slider-with-thumbnails">
+                    <div class="image-slider-with-thumbnails">
     <div class="splide primary-slider" role="group" aria-label="Main Image Slider">
         <div class="splide__arrows">
             <button class="splide__arrow splide__arrow--prev">
@@ -587,72 +585,73 @@
     </div>
 </div>
 
-                        <blockquote>
-                            <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі України за свою безпеку</p>
-                            <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
-                        </blockquote>
+                    <blockquote>
+                        <p>Ця угода є важливим кроком для України в зміцненні її оборонної потужності. Вона свідчить про тісні військові зв'язки між Україною та Канадою та підтверджує підтримку Канади в боротьбі України за свою безпеку</p>
+                        <footer>Міністр оборони Канади Біл Блер у Торонто</footer>
+                    </blockquote>
 
-                        <p>
-                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
-                        </p>
-                        <figure>
-                            <picture>
-                                <img src="./images/slides/image-slide-1.jpeg" alt="Content Image Placeholder">
-                            </picture>
-                            <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
-                        </figure>
-                        <figure>
-                            <picture>
-                                <img src="./images/slides/image-slide-2.jpeg" alt="Content Image Placeholder">
-                            </picture>
-                            <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
-                        </figure>
-                        <ol>
-                            <li>
-                                Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати розвідку, наносити удари по ворожих цілях та координувати військові операції з високою точністю та ефективністю  (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
-                            </li>
-                            <li>
-                                Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
-                            </li>
-                        </ol>
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
+                    <figure>
+                        <picture>
+                            <img src="./images/slides/image-slide-1.jpeg" alt="Content Image Placeholder">
+                        </picture>
+                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                    </figure>
+                    <figure>
+                        <picture>
+                            <img src="./images/slides/image-slide-2.jpeg" alt="Content Image Placeholder">
+                        </picture>
+                        <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                    </figure>
+                    <ol>
+                        <li>
+                            Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати розвідку, наносити удари по ворожих цілях та координувати військові операції з високою точністю та ефективністю  (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                        </li>
+                        <li>
+                            Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                        </li>
+                    </ol>
 
-                        <p>
-                            Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
-                        </p>
+                    <p>
+                        Згідно з угодою, Канада постачатиме Україні бойові дрони з передовою технологією, які забезпечать українській армії перевагу на полі бою. Це може включати в себе різноманітні моделі дронів, які призначені для виконання різних завдань, від розвідки до ударів по цілях.
+                    </p>
 
-                        <ul>
-                            <li>
-                                Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати розвідку, наносити удари по ворожих цілях та координувати військові операції з високою точністю та ефективністю  (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                    <ul>
+                        <li>
+                            Бойові дрони стали ключовим елементом сучасної військової стратегії, дозволяючи здійснювати розвідку, наносити удари по ворожих цілях та координувати військові операції з високою точністю та ефективністю  (<a href="https://tabloid.pravda.com.ua">tabloid.pravda.com.ua</a>)
+                        </li>
+                        <li>
+                            Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                        </li>
+                    </ul>
+
+                    <div class="post-tags">
+                        <strong>Тема:</strong>
+                        <ul class="post-tags__list">
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Україна
+                                </a>
                             </li>
-                            <li>
-                                Для України, яка перебуває у стані війни, володіння сучасними бойовими дронами є критично важливим для зміцнення оборони та забезпечення безпеки своїх громадян.
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Війна
+                                </a>
+                            </li>
+                            <li class="post-tags__item">
+                                <a class="post-tags__link" href="#">
+                                    Зброя
+                                </a>
                             </li>
                         </ul>
-
-                        <div class="post-tags">
-                            <strong>Тема:</strong>
-                            <ul class="post-tags__list">
-                                <li class="post-tags__item">
-                                    <a class="post-tags__link" href="#">
-                                        Україна
-                                    </a>
-                                </li>
-                                <li class="post-tags__item">
-                                    <a class="post-tags__link" href="#">
-                                        Війна
-                                    </a>
-                                </li>
-                                <li class="post-tags__item">
-                                    <a class="post-tags__link" href="#">
-                                        Зброя
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
-                <div class="col-4 pl-2 pr-0">
-                    <div class="side-banner">
+                </section>
+            </div>
+            <div class="col-4 pl-2 pr-0">
+                <div class="side-banner">
     <h2 class="side-banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
         послуги.</h2>
     <img class="side-banner__logo" src="./images/logo.svg" alt="Logo">
@@ -660,122 +659,124 @@
         Підтримати
     </button>
 </div>
-                    <div class="recent-news">
+                <aside class="recent-news">
     <h2 class="recent-news__heading">
         <img src="./images/logo-yellow.svg" alt="Логотип">
         Останні новини
     </h2>
 
     <div class="article-time-rows">
-        <div class="article-time-row article-time-row--important">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури.
-                </a>
-            </div>
-        </div>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
 
-        <div class="article-time-row">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                </a>
-            </div>
-        </div>
+        <time datetime="2024-02-20">20.02.2024</time>
 
-        <div class="article-time-row">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                </a>
-            </div>
-        </div>
-
-        <div class="article-time-row">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                </a>
-            </div>
-        </div>
-
-        <div class="article-time-row">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                </a>
-            </div>
-        </div>
-
-        <div class="article-time-row">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                </a>
-            </div>
-        </div>
-
-        <div class="recent-news__divider">
-            <time datetime="2024-02-20">20.02.2024</time>
-        </div>
-
-        <div class="article-time-row">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                </a>
-            </div>
-        </div>
-
-        <div class="article-time-row">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                </a>
-            </div>
-        </div>
-
-        <div class="article-time-row">
-            <div class="article-time-row__header">
-                <time datetime="14:30">14:30</time>
-            </div>
-            <div class="article-time-row__wrapper">
-                <a href="./post-page.html" class="article-time-row__title" title="Title">
-                    Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-                </a>
-            </div>
-        </div>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
+            <a href="./post-page.html" class="article-time-row article-time-row--important">
+    <div class="article-time-row__header">
+        <time datetime="14:30">14:30</time>
+    </div>
+    <div class="article-time-row__wrapper">
+        <h3 class="article-time-row__title" title="Title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
+    </div>
+</a>
+        
     </div>
 
     <button class="button button--secondary">
         Більше новин
     </button>
-</div>
-                    <div class="recent-news">
+</aside>
+                <aside class="recent-news">
     <h2 class="recent-news__heading">
         <img src="./images/logo-yellow.svg" alt="Логотип">
         Останні новини
@@ -907,8 +908,8 @@
     <button class="button button--secondary">
         Більше новин
     </button>
-</div>
-                    <div class="recent-news">
+</aside>
+                <aside class="recent-news">
     <h2 class="recent-news__heading">
         <img src="./images/logo-yellow.svg" alt="Логотип">
         Останні новини
@@ -933,11 +934,10 @@
     <button class="button button--secondary">
         Більше новин
     </button>
-</div>
-                </div>
+</aside>
             </div>
         </div>
-    </section>
+    </div>
 </main>
 
 <footer class="footer">

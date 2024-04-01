@@ -8,16 +8,16 @@
   <title>Експерти</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240326102725">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240401140543">
 
-  <script defer="defer" src="js/main.min.js?_v=20240326102725"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240401140543"></script>
 </head>
 
 <body>
 
 <header class="header">
   <div class="container">
-    <div class="row">
+    <div class="header__row">
       <input type="checkbox" id="mobile-menu">
       <label class="menu-hamburger" for="mobile-menu">
         <span class="menu-hamburger__line"></span>
@@ -110,7 +110,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="header__row header__row">
       <nav class="main-navigation">
     <ul class="menu__list">
         <li class="menu__item menu__item--active">
@@ -149,391 +149,425 @@
 </nav>
     </div>
 
-    <div class="row">
-      <hr class="divider-h">
-    </div>
+    <hr class="divider-h">
   </div>
 </header>
 
-<main>
+<main class="page">
   <div data-observ></div>
-
     <section>
       <div class="container">
-        <div class="row">
-          <header class="page__header">
-            <h2 class="page__heading">
-              <img src="./images/logo-half-green.svg" alt="Logo">
-              Думки
-            </h2>
-          </header>
-        </div>
-        <div class="row">
-          <div class="expert-articles-cards expert-articles-cards--grid expert-articles-cards--grid-col-4">
-            
-              <div class="expert-article-card">
+        <header class="page__header">
+          <h1 class="page__heading">
+            <img src="./images/logo-half-green.svg" alt="Logo">
+            Думки
+          </h1>
+        </header>
+        <div class="expert-articles-cards expert-articles-cards--grid expert-articles-cards--grid-col-4">
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-              <div class="expert-article-card">
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+            <article class="expert-article-card">
     <div class="expert-article-card__image">
         <picture><source srcset="./images/placeholders/expert-article-card.webp" type="image/webp"><img src="./images/placeholders/expert-article-card.png" alt="Expert Article Card"></picture>
     </div>
     <a href="./author.html" class="button button--secondary expert-article-card__author">
         Олеся Яхно
     </a>
-    <div class="expert-article-card__header">
-        <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
-            Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+    <hgroup class="article-card__heading">
+        <div class="expert-article-card__timestamps">
+            <div class="text-truncate" title="Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина">
+                Політичний експерт, Член громадської організації “Люди разом”, Улюблений онук і просто гарна людина
+            </div>
+            <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
         </div>
-        <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-    </div>
-    <a href="#" class="expert-article-card__title">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-    </a>
-</div>
-            
-          </div>
+        <a href="#" class="expert-article-card__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </a>
+    </hgroup>
+</article>
+          
+        </div>
 
-          <nav class="pagination" aria-label="articles navigation">
+        <nav class="pagination" aria-label="articles navigation">
     <ul class="pagination__list">
         <li class="pagination__item pagination__item--disabled">
             <a class="pagination__link pagination__link--prev" href="?page=2" rel="prev" title="Previous">
@@ -564,7 +598,6 @@
         </li>
     </ul>
 </nav>
-        </div>
       </div>
     </section>
 </main>
