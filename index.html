@@ -8,9 +8,9 @@
   <title>Головна</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240401140543">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240411181711">
 
-  <script defer="defer" src="js/main.min.js?_v=20240401140543"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240411181711"></script>
 </head>
 
 <body class="homepage">
@@ -24,7 +24,8 @@
       </label>
 
       <div class="mobile-menu">
-        <form class="mobile-search-bar" action="./search.html">
+        <div class="mobile-menu__wrapper">
+          <form class="mobile-search-bar" action="./search.html">
     <div class="mobile-search-bar__input">
         <span class="icon icon-search">
         </span>
@@ -32,56 +33,57 @@
         <input type="search" name="search" id="search" placeholder="Пошук" required>
     </div>
 </form>
-        <nav class="mobile-navigation">
-          <ul class="menu__list">
-            <li class="menu__item menu__item--active">
-              <a href="/" class="menu__link">Головна</a>
-            </li>
-            <li class="menu__item">
-              <a href="./news.html" class="menu__link">Новини</a>
-            </li>
-            <li class="menu__item">
-              <a href="./articles.html" class="menu__link">Статі</a>
-            </li>
-            <li class="menu__item">
-              <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
-            </li>
-            <li class="menu__item">
-              <a href="./expert-articles.html" class="menu__link">Думки</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Редакція
+          <nav class="mobile-navigation">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="/" class="menu__link">Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="./news.html" class="menu__link">Новини</a>
+              </li>
+              <li class="menu__item">
+                <a href="./articles.html" class="menu__link">Статі</a>
+              </li>
+              <li class="menu__item">
+                <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
+              </li>
+              <li class="menu__item">
+                <a href="./expert-articles.html" class="menu__link">Думки</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Редакція
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="./about-us.html" class="menu__link">Про Нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="./editor-policy.html" class="menu__link">Політика Редагування</a>
+              </li>
+              <li class="menu__item">
+                <a href="./usage-policy.html" class="menu__link">Правила використання матеріалів</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a class="social-media__link" href="#" title="Facebook">
+                <span class="icon icon-facebook"></span>
               </a>
             </li>
-            <li class="menu__item">
-              <a href="./about-us.html" class="menu__link">Про Нас</a>
+            <li class="social-media__item">
+              <a class="social-media__link" href="#" title="Twitter">
+                <span class="icon icon-twitter"></span>
+              </a>
             </li>
-            <li class="menu__item">
-              <a href="./editor-policy.html" class="menu__link">Політика Редагування</a>
-            </li>
-            <li class="menu__item">
-              <a href="./usage-policy.html" class="menu__link">Правила використання матеріалів</a>
+            <li class="social-media__item">
+              <a class="social-media__link" href="#" title="Telegram">
+                <span class="icon icon-telegram"></span>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="mb-4 social-media">
-          <li class="social-media__item">
-            <a class="social-media__link" href="#" title="Facebook">
-              <span class="icon icon-facebook"></span>
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a class="social-media__link" href="#" title="Twitter">
-              <span class="icon icon-twitter"></span>
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a class="social-media__link" href="#" title="Telegram">
-              <span class="icon icon-telegram"></span>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
 
       <form class="search-bar" action="./search.html">
@@ -105,12 +107,12 @@
       <div class="header__buttons">
         <button id="donation-btn" class="button button--primary" title="Підтримати">
           <span class="icon icon-donation"></span>
-          Підтримати
+          <span class="text">Підтримати</span>
         </button>
       </div>
     </div>
 
-    <div class="header__row header__row">
+    <div class="header__row">
       <nav class="main-navigation">
     <ul class="menu__list">
         <li class="menu__item menu__item--active">
@@ -148,8 +150,6 @@
     </ul>
 </nav>
     </div>
-
-    <hr class="divider-h">
   </div>
 </header>
 
@@ -158,115 +158,144 @@
     <section class="home-articles">
         <div class="container">
             <aside class="recent-news">
-    <h2 class="recent-news__heading">
+    <header class="recent-news__header">
         <img src="./images/logo-yellow.svg" alt="Логотип">
-        Останні новини
-    </h2>
+        <h2 class="recent-news__heading">
+            Останні новини
+        </h2>
+    </header>
 
     <div class="article-time-rows">
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
 
         <time datetime="2024-02-20">20.02.2024</time>
 
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
-            <a href="./post-page.html" class="article-time-row article-time-row--important">
-    <div class="article-time-row__header">
-        <time datetime="14:30">14:30</time>
-    </div>
-    <div class="article-time-row__wrapper">
-        <h3 class="article-time-row__title" title="Title">
-            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
-        </h3>
-    </div>
-</a>
+            <article class="article-time-row">
+    <a href="./post-page.html" class="article-time-row__box">
+        <div class="article-time-row__header">
+            <time datetime="14:30">14:30</time>
+        </div>
+        <header class="article-time-row__wrapper">
+            <h3 class="article-time-row__title" title="Title">
+                Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+            </h3>
+        </header>
+    </a>
+</article>
+
         
     </div>
 
@@ -275,14 +304,17 @@
     </button>
 </aside>
             <div class="main-articles">
-                <div class="article-excerpt">
-    <div class="article-excerpt__header">
-        <time>2 години тому</time>
-    </div>
-    <a class="article-excerpt__title" href="#">
-        Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+                <article class="article-excerpt">
+    <a class="article-excerpt__box" href="#" title="Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі">
+        <div class="article-excerpt__header">
+            <time>2 години тому</time>
+        </div>
+        <h3 class="article-excerpt__title">
+            Польські митники не хотіли ставити е-пломби на транзитні фури з України, бо їх знову могли зірвати страйкарі
+        </h3>
     </a>
-</div>
+</article>
+
 
                 <article class="article-card article-card--featured mb-4">
                     <div class="article-card__tags">
@@ -292,100 +324,138 @@
                     <div class="article-card__image">
                         <picture><source srcset="./images/placeholders/article-card-featured.webp" type="image/webp"><img src="./images/placeholders/article-card-featured.jpeg" alt="Article Card Image Featured"></picture>
                     </div>
-                    <hgroup class="article-card__heading">
+                    <header class="article-card__heading">
                         <div class="article-card__timestamps">
                             <time datetime="2024-02-14 14:30">2 години тому</time>
                             <span class="reading-time">
-                        5 хвилин на читання
-                    </span>
+                                5 хвилин на читання
+                            </span>
                         </div>
                         <a href="./post-page.html" class="article-card__title" title="Title">
                             Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
                         </a>
-                    </hgroup>
+                    </header>
                 </article>
+
                 <div class="article-rows">
-                    <article class="article-row article-row--with-image">
-                        <div class="article-row__tags">
-                            <span class="article-row__tag article-card__tag--important">Оновлено</span>
-                        </div>
-                        <div class="article-row__image">
-                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
-                        </div>
-                        <hgroup class="article-row__heading">
-                            <div class="article-row__header">
-                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                                <span class="reading-time">
-                                5 хвилин на читання
-                            </span>
-                            </div>
-                            <a href="./post-page.html" class="article-row__title" title="Title">
-                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                            </a>
-                        </hgroup>
-                    </article>
-                    <article class="article-row article-row--with-image">
-                        <div class="article-row__image">
-                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
-                        </div>
-                        <hgroup class="article-row__heading">
-                            <div class="article-row__header">
-                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                                <span class="reading-time">
-                                5 хвилин на читання
-                            </span>
-                            </div>
-                            <a href="./post-page.html" class="article-row__title" title="Title">
-                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                            </a>
-                        </hgroup>
-                    </article>
-                    <article class="article-row article-row--with-image">
-                        <div class="article-row__tags">
-                            <span class="article-row__tag article-card__tag--important">Оновлено</span>
-                            <span class="article-row__tag">Політика</span>
-                        </div>
-                        <div class="article-row__image">
-                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
-                        </div>
-                        <hgroup class="article-row__heading">
-                            <div class="article-row__header">
-                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                                <span class="reading-time">
-                                5 хвилин на читання
-                            </span>
-                            </div>
-                            <a href="./post-page.html" class="article-row__title" title="Title">
-                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                            </a>
-                        </hgroup>
-                    </article>
-                    <article class="article-row article-row--with-image">
-                        <div class="article-row__tags">
-                            <span class="article-row__tag">Фото/Відео</span>
-                        </div>
-                        <div class="article-row__image">
-                            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
-                        </div>
-                        <hgroup class="article-row__heading">
-                            <div class="article-row__header">
-                                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
-                                <span class="reading-time">
-                                5 хвилин на читання
-                            </span>
-                            </div>
-                            <a href="./post-page.html" class="article-row__title" title="Title">
-                                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
-                            </a>
-                        </hgroup>
-                    </article>
+                    
+                        <article>
+    <a href="./post-page.html" class="article-row article-row--with-image" title="Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР">
+        <div class="article-row__tags">
+            <span class="article-card__tag--important article-row__tag">Оновлено</span>
+        </div>
+        <div class="article-row__image">
+            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+        </div>
+        <header class="article-row__wrapper">
+            <div class="article-row__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                <span class="reading-time">
+                    5 хвилин на читання
+                </span>
+            </div>
+            <h3 class="article-row__title">
+                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+            </h3>
+        </header>
+    </a>
+</article>
+                    
+                        <article>
+    <a href="./post-page.html" class="article-row article-row--with-image" title="Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР">
+        <div class="article-row__tags">
+            <span class="article-card__tag--important article-row__tag">Оновлено</span>
+        </div>
+        <div class="article-row__image">
+            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+        </div>
+        <header class="article-row__wrapper">
+            <div class="article-row__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                <span class="reading-time">
+                    5 хвилин на читання
+                </span>
+            </div>
+            <h3 class="article-row__title">
+                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+            </h3>
+        </header>
+    </a>
+</article>
+                    
+                        <article>
+    <a href="./post-page.html" class="article-row article-row--with-image" title="Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР">
+        <div class="article-row__tags">
+            <span class="article-card__tag--important article-row__tag">Оновлено</span>
+        </div>
+        <div class="article-row__image">
+            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+        </div>
+        <header class="article-row__wrapper">
+            <div class="article-row__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                <span class="reading-time">
+                    5 хвилин на читання
+                </span>
+            </div>
+            <h3 class="article-row__title">
+                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+            </h3>
+        </header>
+    </a>
+</article>
+                    
+                        <article>
+    <a href="./post-page.html" class="article-row article-row--with-image" title="Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР">
+        <div class="article-row__tags">
+            <span class="article-card__tag--important article-row__tag">Оновлено</span>
+        </div>
+        <div class="article-row__image">
+            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+        </div>
+        <header class="article-row__wrapper">
+            <div class="article-row__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                <span class="reading-time">
+                    5 хвилин на читання
+                </span>
+            </div>
+            <h3 class="article-row__title">
+                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+            </h3>
+        </header>
+    </a>
+</article>
+                    
+                        <article>
+    <a href="./post-page.html" class="article-row article-row--with-image" title="Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР">
+        <div class="article-row__tags">
+            <span class="article-card__tag--important article-row__tag">Оновлено</span>
+        </div>
+        <div class="article-row__image">
+            <picture><source srcset="./images/placeholders/article-row.webp" type="image/webp"><img class="" src="./images/placeholders/article-row.png" alt="Article Row"></picture>
+        </div>
+        <header class="article-row__wrapper">
+            <div class="article-row__header">
+                <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
+                <span class="reading-time">
+                    5 хвилин на читання
+                </span>
+            </div>
+            <h3 class="article-row__title">
+                Україна досі вважає полоненими людей зі «списку Іл-76», яких росія оголосила загиблими — ГУР
+            </h3>
+        </header>
+    </a>
+</article>
+                    
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="section">
+    <section class="section adaptive-banner">
         <div class="container">
             <div class="banner">
     <h2 class="banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
@@ -395,45 +465,42 @@
         Підтримати
     </button>
 </div>
+            <div class="side-banner">
+    <h2 class="side-banner__heading">Підтримайте нашу роботу і допоможіть нам зростати та надавати якісні
+        послуги.</h2>
+    <img class="side-banner__logo" src="./images/logo.svg" alt="Logo">
+    <button class="button button--primary side-banner__cta">
+        Підтримати
+    </button>
+</div>
         </div>
     </section>
 
-    <section class="section articles-category" aria-labelledby="carousel-heading" data-slider="splide">
+    <section class="section articles-category-slider" aria-labelledby="carousel-heading" data-slider="splide">
         <div class="container">
-            <hgroup id="carousel-heading" class="articles-category__heading">
+            <header class="articles-category__heading">
+                <img src="./images/logo-half-green.svg" alt="Logo">
                 <h2 class="articles-category__title like-h1">
-                    <img src="./images/logo-half-green.svg" alt="Logo">
                     Cтатті
                 </h2>
 
-                <div class="articles-category__controls">
-                    <a href="./articles.html" class="button button--secondary" title="Переглянути розділ">До розділу</a>
-
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <i class="icon icon-arrow-left"></i>
-                        </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <i class="icon icon-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </hgroup>
+                <a href="./articles.html" class="button button--secondary" title="Переглянути розділ">До розділу</a>
+            </header>
 
             <div class="splide__track">
-                <ul class="article-cards article-cards--grid article-cards--grid-col-3 splide__list">
+                <ul class="articles-category__grid articles-category__list splide-transform splide__list">
                     
                         <li class="splide__slide">
                             <article class="article">
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -443,7 +510,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -453,12 +520,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -468,7 +535,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -478,12 +545,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -493,7 +560,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -503,12 +570,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -518,7 +585,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -528,12 +595,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -543,7 +610,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -553,12 +620,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -568,52 +635,53 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
                     
                 </ul>
             </div>
+
+            <div class="articles-category__controls">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <i class="icon icon-arrow-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <i class="icon icon-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="section articles-category" aria-labelledby="carousel-heading" data-slider="splide">
+    <section class="section articles-category-slider" aria-labelledby="carousel-heading" data-slider="splide">
         <div class="container">
-            <hgroup id="carousel-heading" class="articles-category__heading">
+            <header class="articles-category__heading">
+                <img src="./images/logo-half-green.svg" alt="Logo">
+
                 <h2 class="articles-category__title like-h1">
-                    <img src="./images/logo-half-green.svg" alt="Logo">
                     Спецпроєкти
                 </h2>
 
-                <div class="articles-category__controls">
-                    <a href="./articles.html" class="button button--secondary" title="Переглянути розділ">До розділу</a>
-
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <i class="icon icon-arrow-left"></i>
-                        </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <i class="icon icon-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </hgroup>
+                <a href="./articles.html" class="button button--secondary" title="Переглянути розділ">До розділу</a>
+            </header>
 
             <div class="splide__track">
-                <ul class="article-cards article-cards--grid article-cards--grid-col-3 splide__list">
+                <ul class="articles-category__grid articles-category__list splide-transform splide__list">
                     
                     <li class="splide__slide">
                         <article class="article">
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -623,7 +691,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                     </li>
@@ -633,12 +701,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -648,7 +716,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                     </li>
@@ -658,12 +726,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -673,7 +741,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                     </li>
@@ -683,12 +751,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -698,7 +766,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                     </li>
@@ -708,12 +776,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -723,7 +791,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                     </li>
@@ -733,12 +801,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -748,52 +816,53 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                     </li>
                     
                 </ul>
             </div>
+
+            <div class="articles-category__controls">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <i class="icon icon-arrow-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <i class="icon icon-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="section articles-category" aria-labelledby="carousel-heading" data-slider="splide">
+    <section class="section articles-category-slider" aria-labelledby="carousel-heading" data-slider="splide">
         <div class="container">
-            <hgroup id="carousel-heading" class="articles-category__heading">
+            <header class="articles-category__heading">
+                <img src="./images/logo-half-green.svg" alt="Logo">
+
                 <h2 class="articles-category__title like-h1">
-                    <img src="./images/logo-half-green.svg" alt="Logo">
                     Думки
                 </h2>
 
-                <div class="articles-category__controls">
-                    <a href="./articles.html" class="button button--secondary" title="Переглянути розділ">До розділу</a>
-
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <i class="icon icon-arrow-left"></i>
-                        </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <i class="icon icon-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </hgroup>
+                <a href="./articles.html" class="button button--secondary" title="Переглянути розділ">До розділу</a>
+            </header>
 
             <div class="splide__track">
-                <ul class="article-cards article-cards--grid article-cards--grid-col-3 splide__list">
+                <ul class="articles-category__grid articles-category__list splide-transform splide__list">
                     
                         <li class="splide__slide">
                             <article class="article">
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -803,7 +872,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -813,12 +882,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -828,7 +897,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -838,12 +907,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -853,7 +922,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -863,12 +932,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -878,7 +947,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -888,12 +957,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -903,7 +972,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -913,12 +982,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -928,52 +997,53 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
                     
                 </ul>
+            </div>
+
+            <div class="articles-category__controls">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <i class="icon icon-arrow-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <i class="icon icon-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section articles-category" aria-labelledby="carousel-heading" data-slider="splide">
+    <section class="section articles-category-slider" aria-labelledby="carousel-heading" data-slider="splide">
         <div class="container">
-            <hgroup id="carousel-heading" class="articles-category__heading">
+            <header class="articles-category__heading">
+                <img src="./images/logo-half-green.svg" alt="Logo">
+
                 <h2 class="articles-category__title like-h1">
-                    <img src="./images/logo-half-green.svg" alt="Logo">
                     Фото
                 </h2>
 
-                <div class="articles-category__controls">
-                    <a href="./articles.html" class="button button--secondary" title="Переглянути розділ">До розділу</a>
-
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <i class="icon icon-arrow-left"></i>
-                        </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <i class="icon icon-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </hgroup>
+                <a href="./articles.html" class="button button--secondary" title="Переглянути розділ">До розділу</a>
+            </header>
 
             <div class="splide__track">
-                <ul class="article-cards article-cards--grid article-cards--grid-col-3 splide__list">
+                <ul class="articles-category__grid articles-category__list splide-transform splide__list">
                     
                         <li class="splide__slide">
                             <article class="article">
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -983,7 +1053,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -993,12 +1063,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -1008,7 +1078,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -1018,12 +1088,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -1033,7 +1103,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -1043,12 +1113,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -1058,7 +1128,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -1068,12 +1138,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -1083,7 +1153,7 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
@@ -1093,12 +1163,12 @@
     <a class="article-card" href="./post-page.html">
         <div class="article-card__tags">
             <span class="article-card__tag">Оновлено</span>
-            <span class="article-card__category">Політика</span>
+            <span class="article-card__tag">Політика</span>
         </div>
         <div class="article-card__image">
             <picture><source srcset="./images/placeholders/article-card.webp" type="image/webp"><img src="./images/placeholders/article-card.png" alt="Article Card Image"></picture>
         </div>
-        <hgroup class="article-card__heading">
+        <header class="article-card__heading">
             <div class="article-card__timestamps">
                 <time datetime="2024-02-14 14:30">14.02.2024 | 14:30</time>
                 <span class="reading-time">
@@ -1108,12 +1178,23 @@
             <h3 class="article-card__title" title="Title">
                 Бойовий медик заявив про побиття співслужбовцем. Що відомо?
             </h3>
-        </hgroup>
+        </header>
     </a>
 </article>
                         </li>
                     
                 </ul>
+            </div>
+
+            <div class="articles-category__controls">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <i class="icon icon-arrow-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <i class="icon icon-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -1121,15 +1202,15 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="row row--wrap mb-5">
-      <div class="px-0 col-3 footer__info">
+    <div class="footer__row">
+      <div class="footer__info">
         <a href="/" class="link--with-image footer__logo logo">
           <img src="./images/footer-logo.svg" alt="Footer Logo">
         </a>
-        <h6 class="mt-4">
+        <h6>
           <strong>Ми у соцмережах</strong>
         </h6>
-        <ul class="mb-4 social-media-list">
+        <ul class="social-media-list">
           <li class="social-media-list__item">
             <a class="social-media-list__link" href="#" title="Facebook">
               <span class="icon icon-facebook"></span>
@@ -1147,87 +1228,95 @@
           </li>
         </ul>
       </div>
-      <nav class="col-6 footer__navigation px-0">
-        <div class="col-6 text-left">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./news.html" class="menu__link">
-                Новини
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./articles.html" class="menu__link">
-                Статі
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./special-projects.html" class="menu__link">
-                Спецпроекти
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./expert-articles.html" class="menu__link">
-                Думки
-              </a>
-            </li>
-          </ul>
-        </div>
-        <nav class="col-6 text-left">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./about-us.html" class="menu__link">
-                Про нас
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./editor-policy.html" class="menu__link">
-                Редакційна політика
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./usage-policy.html" class="menu__link">
-                Правила використання матеріалів
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./advertising.html" class="menu__link">
-                Реклама
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="footer__navigation">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./news.html" class="menu__link">
+              Новини
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./articles.html" class="menu__link">
+              Статі
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./special-projects.html" class="menu__link">
+              Спецпроекти
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./expert-articles.html" class="menu__link">
+              Думки
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./about-us.html" class="menu__link">
+              Про нас
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./editor-policy.html" class="menu__link">
+              Редакційна політика
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./usage-policy.html" class="menu__link">
+              Правила використання матеріалів
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./advertising.html" class="menu__link">
+              Реклама
+            </a>
+          </li>
+        </ul>
       </nav>
-      <div class="px-0 col-3 footer__info">
-        <h6>
-          <strong>Розвиваємо проект за підтримки:</strong>
-        </h6>
-        <a class="link--with-image" href="https://mediadevelopmentfoundation.org/">
-          <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
-        </a>
-        <h6 class="mt-3 my-2 text-uppercase">
-          <strong>Дизайн та розробка:</strong>
-        </h6>
-        <a class="link--with-image" href="#">
-          <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
-        </a>
-      </div>
-    </div>
-    <div class="row row--wrap justify-content-center">
-      <div class="text-center w-50" style="font-size: 12px;">
-        <p>
-          &copy; ©2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
-          <br>
-          <br>
-          <a class="text-underline" href="#">
-            Права та Інформація, щоб в нас все було добре
+      <div class="footer__info">
+        <div class="footer__info-wrapper">
+          <h6>
+            <strong>Розвиваємо проект за підтримки:</strong>
+          </h6>
+          <a class="link--with-image" href="https://mediadevelopmentfoundation.org/">
+            <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
           </a>
-          <br>
-          <br>
-          Усі права захищені.
-        </p>
+        </div>
+        <div class="footer__info-wrapper creator--desktop">
+          <h6>
+            <strong>Дизайн та розробка:</strong>
+          </h6>
+          <a class="link--with-image" href="#">
+            <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="footer__rights">
+      <p>
+        &copy; ©2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
+        <br>
+        <br>
+        <a class="text-underline" href="#">
+          Права та Інформація, щоб в нас все було добре
+        </a>
+        <br>
+        <br>
+        Усі права захищені.
+      </p>
+    </div>
+    <div class="creator--mobile">
+      <h6>
+        <strong>Дизайн та розробка:</strong>
+      </h6>
+      <a class="link--with-image" href="#">
+        <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
+      </a>
+    </div>
+    </div>
+  
 </footer>
 
 </body>

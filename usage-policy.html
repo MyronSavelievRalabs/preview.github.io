@@ -8,9 +8,9 @@
   <title>Політика редагування</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240401140543">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240411181711">
 
-  <script defer="defer" src="js/main.min.js?_v=20240401140543"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240411181711"></script>
 </head>
 
 <body>
@@ -24,7 +24,8 @@
       </label>
 
       <div class="mobile-menu">
-        <form class="mobile-search-bar" action="./search.html">
+        <div class="mobile-menu__wrapper">
+          <form class="mobile-search-bar" action="./search.html">
     <div class="mobile-search-bar__input">
         <span class="icon icon-search">
         </span>
@@ -32,56 +33,57 @@
         <input type="search" name="search" id="search" placeholder="Пошук" required>
     </div>
 </form>
-        <nav class="mobile-navigation">
-          <ul class="menu__list">
-            <li class="menu__item menu__item--active">
-              <a href="/" class="menu__link">Головна</a>
-            </li>
-            <li class="menu__item">
-              <a href="./news.html" class="menu__link">Новини</a>
-            </li>
-            <li class="menu__item">
-              <a href="./articles.html" class="menu__link">Статі</a>
-            </li>
-            <li class="menu__item">
-              <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
-            </li>
-            <li class="menu__item">
-              <a href="./expert-articles.html" class="menu__link">Думки</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Редакція
+          <nav class="mobile-navigation">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="/" class="menu__link">Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="./news.html" class="menu__link">Новини</a>
+              </li>
+              <li class="menu__item">
+                <a href="./articles.html" class="menu__link">Статі</a>
+              </li>
+              <li class="menu__item">
+                <a href="./special-projects.html" class="menu__link">Спецпроєкти</a>
+              </li>
+              <li class="menu__item">
+                <a href="./expert-articles.html" class="menu__link">Думки</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Редакція
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="./about-us.html" class="menu__link">Про Нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="./editor-policy.html" class="menu__link">Політика Редагування</a>
+              </li>
+              <li class="menu__item">
+                <a href="./usage-policy.html" class="menu__link">Правила використання матеріалів</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a class="social-media__link" href="#" title="Facebook">
+                <span class="icon icon-facebook"></span>
               </a>
             </li>
-            <li class="menu__item">
-              <a href="./about-us.html" class="menu__link">Про Нас</a>
+            <li class="social-media__item">
+              <a class="social-media__link" href="#" title="Twitter">
+                <span class="icon icon-twitter"></span>
+              </a>
             </li>
-            <li class="menu__item">
-              <a href="./editor-policy.html" class="menu__link">Політика Редагування</a>
-            </li>
-            <li class="menu__item">
-              <a href="./usage-policy.html" class="menu__link">Правила використання матеріалів</a>
+            <li class="social-media__item">
+              <a class="social-media__link" href="#" title="Telegram">
+                <span class="icon icon-telegram"></span>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="mb-4 social-media">
-          <li class="social-media__item">
-            <a class="social-media__link" href="#" title="Facebook">
-              <span class="icon icon-facebook"></span>
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a class="social-media__link" href="#" title="Twitter">
-              <span class="icon icon-twitter"></span>
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a class="social-media__link" href="#" title="Telegram">
-              <span class="icon icon-telegram"></span>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
 
       <form class="search-bar" action="./search.html">
@@ -105,12 +107,12 @@
       <div class="header__buttons">
         <button id="donation-btn" class="button button--primary" title="Підтримати">
           <span class="icon icon-donation"></span>
-          Підтримати
+          <span class="text">Підтримати</span>
         </button>
       </div>
     </div>
 
-    <div class="header__row header__row">
+    <div class="header__row">
       <nav class="main-navigation">
     <ul class="menu__list">
         <li class="menu__item menu__item--active">
@@ -148,26 +150,22 @@
     </ul>
 </nav>
     </div>
-
-    <hr class="divider-h">
   </div>
 </header>
 
-<main>
+<main class="page simple-page">
     <div data-observ></div>
     <div class="container">
-        <div class="row">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Редакція</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Правила використання матеріалів</li>
-                </ol>
-            </nav>
-        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Редакція</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Правила використання матеріалів</li>
+            </ol>
+        </nav>
+    </div>
 
-        <div class="row row--wrap">
-            <div class="col-4 pl-0">
-                <aside class="sidebar-navigation">
+    <div class="container simple-page__content">
+        <aside class="sidebar-navigation">
     <nav>
         <ul class="sidebar-navigation__list">
             <li class="sidebar-navigation__item sidebar-navigation__item--active">
@@ -185,47 +183,43 @@
         </ul>
     </nav>
 </aside>
-            </div>
 
-            <article class="col-8 pr-0">
-                <div class="page__header">
-                    <img src="./images/logo-yellow.svg" alt="Logo">
-                    <h1 class="page__heading">
-                        Правила використання матеріалів
-                    </h1>
-                </div>
-                <p>
-                    1. Ці правила поширюються на всі сайти, які входять до Інтернет-холдингу "Українська правда". Зокрема, Українська правда (www.pravda.com.ua), ТаблоID (tabloid.pravda.com.ua), Українська правда. Життя (life.pravda.com.ua), Українська правда. Блоги (blogs.pravda.com.ua), Економічна правда (www.epravda.com.ua), Історична правда (www.istpravda.com.ua).
-                    <br>
-                    <br>
-                    2. Усі виключні майнові і немайнові авторські права на інформацію, що розміщується на сайтах Інтернет-холдингу "Українська правда" належать інтернет-виданню "Українська правда" та авторам публікацій, якщо в тексті не вказується інше. Під інформацією маються на увазі всі матеріали, що розміщуються на сайті – статті, авторські колонки, новини, блоги, інтерв’ю тощо.
-                    <br>
-                    <br>
-                    3. Інтернет-виданням дозволяється безкоштовно використовувати інформацію, розміщену на сайтах Інтернет-холдингу "Українська правда", за умови гіперпосилання та згадки першоджерела не нижче другого абзацу або іншим чітким проявом джерела інформації (плашки, логотипу або повної назви сайту), який видно у першому екрані пристрою (в тому числі смартфону, планшету тощо). Для друкованих видань передрук матеріалів Інтернет-холдингу "Української правди" дозволяється на гонорарній основі та лише за письмової згоди редактора. Для електронних ЗМІ дозволяється використовувати інформацію, розміщену на сайтах Інтернет-холдингу "Українська правда", за умови усного посилання на першоджерело. Під використанням інформації мається на увазі будь-яке відтворення, републікація, поширення, переробка, переклад, включення його частин до інших творів та інші способи, передбачені Законом України "Про авторське право та суміжні права".
-                    <br>
-                    <br>
-                    4. Забороняється будь-яке комерційне використання інформації, відтворення текстів чи їх фрагментів з метою комерційної реалізації права доступу до цієї інформації.
-                    <br>
-                    <br>
-                    5. У разі порушення будь-якого пункту цих правил, "Українська правда" залишає за собою право захищати свої права та інтереси шляхом подачі скарг до правоохоронних органів та позовних заяв до судових органів.                </p>
-            </article>
-        </div>
-
-
+        <section class="page__wrapper">
+            <header class="page__header">
+                <img src="./images/logo-yellow.svg" alt="Logo">
+                <h1 class="page__heading">
+                    Правила використання матеріалів
+                </h1>
+            </header>
+            <p>
+                1. Ці правила поширюються на всі сайти, які входять до Інтернет-холдингу "Українська правда". Зокрема, Українська правда (www.pravda.com.ua), ТаблоID (tabloid.pravda.com.ua), Українська правда. Життя (life.pravda.com.ua), Українська правда. Блоги (blogs.pravda.com.ua), Економічна правда (www.epravda.com.ua), Історична правда (www.istpravda.com.ua).
+                <br>
+                <br>
+                2. Усі виключні майнові і немайнові авторські права на інформацію, що розміщується на сайтах Інтернет-холдингу "Українська правда" належать інтернет-виданню "Українська правда" та авторам публікацій, якщо в тексті не вказується інше. Під інформацією маються на увазі всі матеріали, що розміщуються на сайті – статті, авторські колонки, новини, блоги, інтерв’ю тощо.
+                <br>
+                <br>
+                3. Інтернет-виданням дозволяється безкоштовно використовувати інформацію, розміщену на сайтах Інтернет-холдингу "Українська правда", за умови гіперпосилання та згадки першоджерела не нижче другого абзацу або іншим чітким проявом джерела інформації (плашки, логотипу або повної назви сайту), який видно у першому екрані пристрою (в тому числі смартфону, планшету тощо). Для друкованих видань передрук матеріалів Інтернет-холдингу "Української правди" дозволяється на гонорарній основі та лише за письмової згоди редактора. Для електронних ЗМІ дозволяється використовувати інформацію, розміщену на сайтах Інтернет-холдингу "Українська правда", за умови усного посилання на першоджерело. Під використанням інформації мається на увазі будь-яке відтворення, републікація, поширення, переробка, переклад, включення його частин до інших творів та інші способи, передбачені Законом України "Про авторське право та суміжні права".
+                <br>
+                <br>
+                4. Забороняється будь-яке комерційне використання інформації, відтворення текстів чи їх фрагментів з метою комерційної реалізації права доступу до цієї інформації.
+                <br>
+                <br>
+                5. У разі порушення будь-якого пункту цих правил, "Українська правда" залишає за собою право захищати свої права та інтереси шляхом подачі скарг до правоохоронних органів та позовних заяв до судових органів.                </p>
+        </section>
     </div>
 </main>
 
 <footer class="footer">
   <div class="container">
-    <div class="row row--wrap mb-5">
-      <div class="px-0 col-3 footer__info">
+    <div class="footer__row">
+      <div class="footer__info">
         <a href="/" class="link--with-image footer__logo logo">
           <img src="./images/footer-logo.svg" alt="Footer Logo">
         </a>
-        <h6 class="mt-4">
+        <h6>
           <strong>Ми у соцмережах</strong>
         </h6>
-        <ul class="mb-4 social-media-list">
+        <ul class="social-media-list">
           <li class="social-media-list__item">
             <a class="social-media-list__link" href="#" title="Facebook">
               <span class="icon icon-facebook"></span>
@@ -243,87 +237,95 @@
           </li>
         </ul>
       </div>
-      <nav class="col-6 footer__navigation px-0">
-        <div class="col-6 text-left">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./news.html" class="menu__link">
-                Новини
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./articles.html" class="menu__link">
-                Статі
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./special-projects.html" class="menu__link">
-                Спецпроекти
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./expert-articles.html" class="menu__link">
-                Думки
-              </a>
-            </li>
-          </ul>
-        </div>
-        <nav class="col-6 text-left">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./about-us.html" class="menu__link">
-                Про нас
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./editor-policy.html" class="menu__link">
-                Редакційна політика
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./usage-policy.html" class="menu__link">
-                Правила використання матеріалів
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./advertising.html" class="menu__link">
-                Реклама
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="footer__navigation">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./news.html" class="menu__link">
+              Новини
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./articles.html" class="menu__link">
+              Статі
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./special-projects.html" class="menu__link">
+              Спецпроекти
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./expert-articles.html" class="menu__link">
+              Думки
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./about-us.html" class="menu__link">
+              Про нас
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./editor-policy.html" class="menu__link">
+              Редакційна політика
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./usage-policy.html" class="menu__link">
+              Правила використання матеріалів
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./advertising.html" class="menu__link">
+              Реклама
+            </a>
+          </li>
+        </ul>
       </nav>
-      <div class="px-0 col-3 footer__info">
-        <h6>
-          <strong>Розвиваємо проект за підтримки:</strong>
-        </h6>
-        <a class="link--with-image" href="https://mediadevelopmentfoundation.org/">
-          <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
-        </a>
-        <h6 class="mt-3 my-2 text-uppercase">
-          <strong>Дизайн та розробка:</strong>
-        </h6>
-        <a class="link--with-image" href="#">
-          <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
-        </a>
-      </div>
-    </div>
-    <div class="row row--wrap justify-content-center">
-      <div class="text-center w-50" style="font-size: 12px;">
-        <p>
-          &copy; ©2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
-          <br>
-          <br>
-          <a class="text-underline" href="#">
-            Права та Інформація, щоб в нас все було добре
+      <div class="footer__info">
+        <div class="footer__info-wrapper">
+          <h6>
+            <strong>Розвиваємо проект за підтримки:</strong>
+          </h6>
+          <a class="link--with-image" href="https://mediadevelopmentfoundation.org/">
+            <img src="./images/media-dev-logo.svg" alt="Media Development Foundation">
           </a>
-          <br>
-          <br>
-          Усі права захищені.
-        </p>
+        </div>
+        <div class="footer__info-wrapper creator--desktop">
+          <h6>
+            <strong>Дизайн та розробка:</strong>
+          </h6>
+          <a class="link--with-image" href="#">
+            <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="footer__rights">
+      <p>
+        &copy; ©2024, Точка Сходу. Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "Точка Сходу" не нижче третього абзацу.
+        <br>
+        <br>
+        <a class="text-underline" href="#">
+          Права та Інформація, щоб в нас все було добре
+        </a>
+        <br>
+        <br>
+        Усі права захищені.
+      </p>
+    </div>
+    <div class="creator--mobile">
+      <h6>
+        <strong>Дизайн та розробка:</strong>
+      </h6>
+      <a class="link--with-image" href="#">
+        <img src="./images/ralabs-logo.svg" alt="Ralabs Logo">
+      </a>
+    </div>
+    </div>
+  
 </footer>
 
 </body>
